@@ -16,11 +16,17 @@ function Acessar(){
     }
     else if(campoLogin == "00123456789"){
         nomeCompletoPaciente.value = "Lucas";
+        acessoPaciente.className = "acessoPacienteMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
     else if(quantVet == 5){
         nomeCompletoFuncionario.value = "Funcionário";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
     else if(quantVet == 11){
         nomeCompletoPaciente.value = "Paciente";
+        acessoPaciente.className = "acessoPacienteMostrar";
+        autenticacao.className = "autenticacaoOcultar";
     }
 }
