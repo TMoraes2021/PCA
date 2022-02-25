@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+
+/* autenticacao */
+.autenticacao{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.autenticacaoOcultar{
+    display: none;
+}   
+
+.divisaoAutenticacao{
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+.descrcaoDivisaoAutenticacao{
+    margin: 5px 0px;
+}
+.campoAutenticacao{
+    text-align: center;
+    float: right;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+.conteudoBotaoAcessar{
+    display: flex;
+}
+.botaoAcessar{
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: black 1px solid;
+}
+
+
+
+
+/* acessoFuncionario */
+.acessoFuncionario{
+    display: none;
+}
+.acessoFuncionarioMostrar{
+    display: grid;
+}
+
+.descricaoAcessoFuncionario{
+    margin: 5px 0px;
+}
+
+
+/* acessoPaciente */
+.acessoPaciente{
+    display: none;
+}
+.acessoPacienteMostrar{
+    display: grid;
+}
+
+.descricaoAcessoPaciente{
+    margin: 5px 0px;
+}
