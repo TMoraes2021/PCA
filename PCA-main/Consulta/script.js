@@ -1,4 +1,6 @@
 function Acessar(){
+    var title = document.getElementById("title");
+
     var campoLogin = document.getElementById("campoLogin").value;
     var quantVet = parseInt(campoLogin.length);
 
@@ -32,6 +34,7 @@ function Acessar(){
         alturaFuncionario.value = "1,60 m";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
+        title.innerHTML = "Consulta | Funcionário";
     }
     else if(campoLogin == "00123456789"){
         nomeCompletoPaciente.value = "Lucas";
@@ -43,15 +46,18 @@ function Acessar(){
         alturaPaciente.value = "1,80 m";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
+        title.innerHTML = "Consulta | Paciente";
     }
     else if(quantVet == 5){
         nomeCompletoFuncionario.value = "Funcionário";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
+        title.innerHTML = "Consulta | Funcionário";
     }
     else if(quantVet == 11){
         nomeCompletoPaciente.value = "Paciente";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
+        title.innerHTML = "Consulta | Paciente";
     }
 }
