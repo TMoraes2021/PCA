@@ -7,10 +7,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body>    
+    <!-- <section class="acessoFuncionario" id="acessoFuncionario">
+        <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
+        <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
+    </section> -->
+
+    
     <section class="autenticacao" id="autenticacao">
         <div class="divisaoAutenticacao">
-            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Insira o CPF ou matricula: </span><input type="text" class="campoAutenticacao" id="campoLogin" value=""></p>    
+            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Insira o CPF ou matricula: </span><input type="text" class="campoAutenticacao" id="campoLogin" value="12345"></p>    
             <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Senha: </span><input type="text" id="campoSenha" class="campoAutenticacao"></p>
             <div class="conteudoBotaoAcessar">
                 <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
@@ -24,23 +30,34 @@
 
     
     <section class="acessoFuncionario" id="acessoFuncionario">
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSaguígneoFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value=""></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value=""></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSanguineoFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value="" disabled="disabled"></p>
     </section>
 
     <section class="acessoPaciente" id="acessoPaciente">
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoPaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Idade: </span><input type="text" id="idadePaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSaguígneoPaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudePaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaPaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Peso: </span><input type="text" id="pesoPaciente" value=""></p>
-        <p class="descricaoAcessoPaciente"><span class="nomeInput">Altura: </span><input type="text" id="alturaPaciente" value=""></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoPaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Idade: </span><input type="text" id="idadePaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSanguineoPaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudePaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaPaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Peso: </span><input type="text" id="pesoPaciente" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoPaciente"><span class="nomeInput">Altura: </span><input type="text" id="alturaPaciente" value="" disabled="disabled"></p>
+    </section>
+
+    
+    <section class="cadastroPaciente" id="cadastroPaciente">
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSanguineoFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value=""></p>
+        <p class="descricaoCadastroPaciente"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value=""></p>
     </section>
 
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>

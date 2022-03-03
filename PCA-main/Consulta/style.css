@@ -7,7 +7,18 @@
 
 
 /* autenticacao */
+/* .autenticacao{
+    display: none;
+}
+.autenticacaoMostrar{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
 .autenticacao{
+    display: grid;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -52,10 +63,22 @@
 }
 .acessoFuncionarioMostrar{
     display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
 }
 
 .descricaoAcessoFuncionario{
     margin: 5px 0px;
+}
+.descricaoAcessoFuncionario input{
+    text-align: center;
+    float: right;
 }
 
 
@@ -65,8 +88,45 @@
 }
 .acessoPacienteMostrar{
     display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
 }
 
 .descricaoAcessoPaciente{
     margin: 5px 0px;
+}
+.descricaoAcessoPaciente input{
+    text-align: center;
+    float: right;
+}
+
+
+/* cadastroPaciente */
+.cadastroPaciente{
+    display: none;
+}
+.cadastroPacienteMostrar{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(208, 208, 208);
+    padding: 10px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.descricaoCadastroPaciente{
+    margin: 5px 0px;
+}
+.descricaoCadastroPaciente input{
+    text-align: center;
+    float: right;
 }
