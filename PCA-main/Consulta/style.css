@@ -29,29 +29,134 @@
 }   
 
 .divisaoAutenticacao{
-    background-color: rgb(208, 208, 208);
-    padding: 10px;
-    border-radius: 10px;
     border: black 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divisaoAutenticacaoEsquerda{
+    color: #ffffff;
+    background-color: #126dde;
+    padding: 10px;
+    padding: 90px 0px;
+}
+.nomeTituloDivisaoAutenticacaoEsquerda{
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+.conteudoDivisaoAutenticacaoEsquerda{
+    margin: 10px;
+    text-indent: 10px;
+}
+
+.divisaoAutenticacaoDireita{
+    display: flex;
+    padding: 90px 0px;
+}
+.nomeTituloDivisaoAutenticacaoDireita{
+    color:#126dde;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.conteudoDivisaoAutenticacaoDireita{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .descrcaoDivisaoAutenticacao{
     margin: 5px 0px;
 }
-.campoAutenticacao{
-    text-align: center;
-    float: right;
-    border-radius: 5px;
-    border: black 1px solid;
+.nomeInputDivisaoAutenticacaoDireita{
+    text-align: left;
 }
 
-.conteudoBotaoAcessar{
-    display: flex;
+.campoAutenticacao{
+    text-align: center;
+    border: black 1px solid;
+    padding: 5px;
 }
+
 .botaoAcessar{
     margin: 10px auto;
     padding: 5px;
-    border-radius: 5px;
     border: black 1px solid;
+}
+
+.esqueceuSenha{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+}
+
+
+/*Esqueceu Senha*/
+.esqueceuSenha{
+    display: none;
+}
+.esqueceuSenhaOcultar{
+    display: grid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}   
+
+.divisaoEsqueceuSenha{
+    border: black 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divisaoEsqueceuSenhaEsquerda{
+    color: #ffffff;
+    background-color: #126dde;
+    padding: 10px;
+    padding: 90px 0px;
+}
+.nomeTituloDivisaoEsqueceuSenhaEsquerda{
+    text-align: center;
+    margin: 10px;
+    font-size: 40px;
+}
+.conteudoDivisaoEsqueceuSenhaEsquerda{
+    margin: 10px;
+    text-indent: 10px;
+}
+
+.divisaoEsqueceuSenhaDireita{
+    display: flex;
+    padding: 90px 0px;
+}
+.nomeTituloDivisaoEsqueceuSenhaDireita{
+    color:#126dde;
+    font-size: 30px;
+    padding-left: 10px;
+}
+.conteudoDivisaoEsqueceuSenhaDireita{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.descrcaoDivisaoEsqueceuSenha{
+    margin: 5px 0px;
+}
+.nomeInputDivisaoEsqueceuSenhaDireita{
+    text-align: left;
+}
+
+.campoEsqueceuSenha{
+    text-align: center;
+    border: black 1px solid;
+    padding: 5px;
+}
+
+#botaoVoltar{   
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 5px;
 }
 
 

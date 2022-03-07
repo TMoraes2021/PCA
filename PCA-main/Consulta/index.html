@@ -16,15 +16,51 @@
     
     <section class="autenticacao" id="autenticacao">
         <div class="divisaoAutenticacao">
-            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Insira o CPF ou matricula: </span><input type="text" class="campoAutenticacao" id="campoLogin" value="12345"></p>    
-            <p class="descrcaoDivisaoAutenticacao"><span class="nomeInput">Senha: </span><input type="text" id="campoSenha" class="campoAutenticacao"></p>
-            <div class="conteudoBotaoAcessar">
-                <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
+            <div class="divisaoAutenticacaoEsquerda">
+                <div class="tituloDivisaoAutenticacaoEsquerda">
+                    <h1 class="nomeTituloDivisaoAutenticacaoEsquerda">BEM-VINDO(A)</h1>
+                </div>
+                <div class="conteudoDivisaoAutenticacaoEsquerda">
+                    <p>Caso ainda não tenha usuário e senha entre em contato com o administrador da sua organização.</p>
+                </div>
             </div>
-            <p>Login: 12345 um Funcionário específico</p>
-            <p>Login: Qualquer número de 5 caracteres um Funcionário genérico</p>
-            <p>Login: 00123456789 um Paciente específico</p>
-            <p>Login: Qualquer número de 11 caracteres um Paciente genérico</p>
+            <div class="divisaoAutenticacaoDireita">
+                <div class="tituloDivisaoAutenticacaoDireita">
+                    <span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span>
+                    <h1 class="nomeTituloDivisaoAutenticacaoDireita">Login</h1>
+                </div>
+                <div class="conteudoDivisaoAutenticacaoDireita">
+                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Usuário</span><br><input type="text" class="campoAutenticacao" id="campoLogin" value="12345"></p>    
+                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Senha</span><br><input type="text" id="campoSenha" class="campoAutenticacao"></p>
+                    <input type="button" value="ENTRAR" class="botaoAcessar" onclick="Acessar()">
+                </div>
+                <p class="esqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="esqueceuSenha" id="esqueceuSenha">
+        <div class="divisaoEsqueceuSenha">
+            <div class="divisaoEsqueceuSenhaEsquerda">
+                <div class="tituloDivisaoEsqueceuSenhaEsquerda">
+                    <h1 class="nomeTituloDivisaoEsqueceuSenhaEsquerda">BEM-VINDO(A)</h1>
+                </div>
+                <div class="conteudoDivisaoEsqueceuSenhaEsquerda">
+                    <p>Caso ainda não tenha usuário e senha entre em contato com o administrador da sua organização.</p>
+                </div>
+            </div>
+            <div class="divisaoEsqueceuSenhaDireita">
+                <div class="tituloDivisaoEsqueceuSenhaDireita">
+                    <span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span>
+                    <h1 class="nomeTituloDivisaoEsqueceuSenhaDireita">Login</h1>
+                </div>
+                <div class="conteudoDivisaoEsqueceuSenhaDireita">
+                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Usuário</span><br><input type="text" class="campoEsqueceuSenha" id="campoLogin" value="12345"></p>    
+                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Senha</span><br><input type="text" id="campoSenha" class="campoEsqueceuSenha"></p>
+                    <input type="button" value="ENTRAR" class="botaoAcessar" onclick="Acessar()">
+                </div>
+                <p class="esqueceuSenha">Esqueceu a sua senha?</p>
+            </div>
         </div>
     </section>
 
