@@ -29,8 +29,16 @@
                     <h1 class="nomeTituloDivisaoAutenticacaoDireita">Login</h1>
                 </div>
                 <div class="conteudoDivisaoAutenticacaoDireita">
-                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Usuário</span><br><input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" value="12345"></p>    
-                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Senha</span><br><input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha"></p>
+                    <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoUsuario">
+                        <label class="nomeInputDivisaoAutenticacaoDireita">Usuário</label>
+                        <br>
+                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" name="campoAutenticacaoUsuario" value="12345">
+                    </p>    
+                    <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoSenha">
+                        <label class="nomeInputDivisaoAutenticacaoDireita">Senha</label>
+                        <br>
+                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="">
+                    </p>
                     <input type="button" value="ENTRAR" class="botaoAutenticar" onclick="Autenticacao()">
                     <p class="LinkEsqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
                 </div>
@@ -55,8 +63,14 @@
                     <h1 class="nomeTituloDivisaoEsqueceuSenhaDireita">Recuperação de senha</h1>
                 </div>
                 <div class="conteudoDivisaoEsqueceuSenhaDireita">
-                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Usuário</span><br><input type="text" class="campoEsqueceuSenha" id="campoEsqueceuSenhaUsuario" value=""></p>    
-                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Email</span><br><input type="email"class="campoEsqueceuSenha" id="campoEsqueceuSenhaEmail" ></p>
+                    <p class="descricaoDivisaoEsqueceuSenha">
+                        <label class="nomeInputDivisaoEsqueceuSenhaDireita" for="campoEsqueceuSenhaUsuario">Usuário</label><br>
+                        <input type="text" class="campoEsqueceuSenha" id="campoEsqueceuSenhaUsuario" name="campoEsqueceuSenhaUsuario" value="">
+                    </p>    
+                    <p class="descricaoDivisaoEsqueceuSenha">
+                        <label class="nomeInputDivisaoEsqueceuSenhaDireita" for="campoEsqueceuSenhaEmail">Email</label><br>
+                        <input type="email"class="campoEsqueceuSenha" name="campoEsqueceuSenhaEmail" id="campoEsqueceuSenhaEmail" value="">
+                    </p>
                     <input type="button" value="ENVIAR" class="botaoEsqueceuSenha" onclick="Acessar()">
                 </div>
                 <p class="esqueceuSenha">Esqueceu a sua senha?</p>
@@ -66,17 +80,72 @@
 
     
     <section class="acessoFuncionario" id="acessoFuncionario">
-        <div class="menuAcessoFuncionario">
-            <img src="img/iconeAvatar.png" class="imagemFuncionario">
+        <div class="menuAcessoFuncionario" id="menuAcessoFuncionario">
+            <div class="dadosAcessoFuncionario">
+                <img src="img/iconeAvatar.png" class="imagemFuncionario">
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioNome">Nome: <span class="acessoFuncionarioNome">Jeniffer Lopez</span></p>
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioMatricula">Matrícula: <span class="acessoFuncionarioMatricula">589045</span></p>
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioFuncao">Função: <span class="acessoFuncionarioFuncao">Recepcionista</span></p>
+            </div>
 
+            <div class="dadosMenuAcessoFuncionario">
+                <p class="dadoMenuAcessoFuncionario" id="menuConsultarCadastro" onclick="menuConsultarCadastro()">Consultar cadastro</p>
+                <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()">Cadastrar paciente</p>
+                <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()">Criar ficha de atendimento</p>
+                <p class="dadoMenuAcessoFuncionario" id="menuConsultarHistorico" onclick="menuConsultarHistorico()">Consultar histórico</p>
+            </div>
         </div>
-        <!-- <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSanguineoFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value="" disabled="disabled"></p> -->
+
+        <div class="consultarCadastro" id="consultarCadastro">
+            <div class="tituloConsultarCadastro" id="tituloConsultarCadastro">
+                <h1 class="nomeTituloConsultarCadastro">CONSULTAR CADASTRO</h1>
+            </div>            
+            <div class="conteudoConsultarCadastro" id="conteudoConsultarCadastro">
+                <p class="descricaoConsultarCadastro">
+                    <label class="nomeInputconsultarCadastro">CPF</label>
+                    <br>
+                    <input type="text"class="campoEsqueceuSenha" id="campoEsqueceuSenhaCPF">
+                </p>
+                <input type="button" value="CONSULTAR" class="botaoConsultarCadastro" onclick="consultarCadastroCriado()">
+            </div>
+        </div>
+
+        <div class="funcionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriado">
+            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado1">
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCPF">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCPF" id="funcionarioConsultarCadastroCriadoCPF">CPF</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCPF" name="funcionarioConsultarCadastroCriadoCPF" value="" disabled="disabled">
+                </p>
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoProntuario">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoProntuario" id="funcionarioConsultarCadastroCriadoProntuario">Prontuário</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoProntuario" name="funcionarioConsultarCadastroCriadoProntuario" value="" disabled="disabled">
+                </p>
+            </div>
+            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado2">
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomeCompleto">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNomeCompleto" id="funcionarioConsultarCadastroCriadoNomeCompleto">Nome Completo</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNomeCompleto" name="funcionarioConsultarCadastroCriadoNomeCompleto" value="" disabled="disabled">
+                </p>
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTipoSaguineo" id="funcionarioConsultarCadastroCriadoTipoSaguineo">Tipo Saguíneo</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTipoSaguineo" name="funcionarioConsultarCadastroCriadoTipoSaguineo" value="" disabled="disabled">
+                </p>
+            </div>
+            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado3">
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCEP">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCEP" id="funcionarioConsultarCadastroCriadoCEP">CEP</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCEP" name="funcionarioConsultarCadastroCriadoCEP" value="" disabled="disabled">
+                </p>
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoRua">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoRua" id="funcionarioConsultarCadastroCriadoRua">Rua</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoRua" name="funcionarioConsultarCadastroCriadoRua" value="" disabled="disabled">
+                </p>
+                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNumero">
+                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNumero" id="funcionarioConsultarCadastroCriadoNumero">Número</label><br>
+                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNumero" name="funcionarioConsultarCadastroCriadoNumero" value="" disabled="disabled">
+                </p>
+            </div>
+        </div>
     </section>
 
     <section class="acessoPaciente" id="acessoPaciente">

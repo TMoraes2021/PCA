@@ -69,12 +69,21 @@ function esqueceuSenha(){
     var autenticacao = document.getElementById("autenticacao");
     var esqueceuSenha = document.getElementById("esqueceuSenha");
 
-
-    
     
     title.innerHTML = "PCA | Esqueceu senha";
     
     autenticacao.className = "autenticacaoOcultar";
     esqueceuSenha.className = "esqueceuSenhaMostrar";
 
+}
+
+function menuConsultarCadastro(){    
+    var consultarCadastro = document.getElementById("consultarCadastro");
+    
+    consultarCadastro.className = "consultarCadastroMostrar";
+}
+function consultarCadastroCriado(){    
+    var consultarCadastro = document.getElementById("consultarCadastro");
+    
+    consultarCadastro.className = "consultarCadastro";
 }
