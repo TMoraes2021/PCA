@@ -1,7 +1,7 @@
-function Acessar(){
+function Autenticacao(){
     var title = document.getElementById("title");
 
-    var campoLogin = document.getElementById("campoLogin").value;
+    var campoLogin = document.getElementById("campoAutenticacaoUsuario").value;
     var quantVet = parseInt(campoLogin.length);
 
     var nomeCompletoFuncionario = document.getElementById("nomeCompletoFuncionario");
@@ -34,7 +34,7 @@ function Acessar(){
         alturaFuncionario.value = "1,60 m";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "Consulta | Funcionário";
+        title.innerHTML = "PCA | Funcionário";
     }
     else if(campoLogin == "00123456789"){
         nomeCompletoPaciente.value = "Lucas";
@@ -46,18 +46,35 @@ function Acessar(){
         alturaPaciente.value = "1,80 m";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "Consulta | Paciente";
+        title.innerHTML = "PCA | Paciente";
     }
     else if(quantVet == 5){
         nomeCompletoFuncionario.value = "Funcionário";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "Consulta | Funcionário";
+        title.innerHTML = "PCA | Funcionário";
     }
     else if(quantVet == 11){
         nomeCompletoPaciente.value = "Paciente";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "Consulta | Paciente";
+        title.innerHTML = "PCA | Paciente";
     }
+}
+
+
+function esqueceuSenha(){
+    var title = document.getElementById("title");
+    
+    var autenticacao = document.getElementById("autenticacao");
+    var esqueceuSenha = document.getElementById("esqueceuSenha");
+
+
+    
+    
+    title.innerHTML = "PCA | Esqueceu senha";
+    
+    autenticacao.className = "autenticacaoOcultar";
+    esqueceuSenha.className = "esqueceuSenhaMostrar";
+
 }

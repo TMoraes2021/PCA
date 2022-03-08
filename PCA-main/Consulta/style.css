@@ -19,14 +19,15 @@
 } */
 .autenticacao{
     display: grid;
-    position: absolute;
+    width: 800px;
+    margin: 1px auto;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translatey(50%);
+
 }
 .autenticacaoOcultar{
     display: none;
-}   
+}
 
 .divisaoAutenticacao{
     border: black 1px solid;
@@ -37,22 +38,22 @@
 .divisaoAutenticacaoEsquerda{
     color: #ffffff;
     background-color: #126dde;
-    padding: 10px;
     padding: 90px 0px;
 }
 .nomeTituloDivisaoAutenticacaoEsquerda{
     text-align: center;
-    margin: 10px;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .conteudoDivisaoAutenticacaoEsquerda{
-    margin: 10px;
+    text-align: justify;
     text-indent: 10px;
+    padding: 0px 10px;
 }
 
 .divisaoAutenticacaoDireita{
-    display: flex;
-    padding: 90px 0px;
+    display: inline;
+    padding-top: 90px;
 }
 .nomeTituloDivisaoAutenticacaoDireita{
     color:#126dde;
@@ -60,7 +61,8 @@
     padding-left: 10px;
 }
 .conteudoDivisaoAutenticacaoDireita{
-    margin: auto;
+
+    margin: 50px 25%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -72,22 +74,28 @@
 }
 
 .campoAutenticacao{
+    width: 100%;
     text-align: center;
-    border: black 1px solid;
+    border: #000000 1px solid;
     padding: 5px;
+    margin-bottom: 5px;
 }
 
-.botaoAcessar{
+.botaoAutenticar{
     margin: 10px auto;
-    padding: 5px;
-    border: black 1px solid;
+    padding: 5px 15px;
+    border: #126dde 1px solid;
+    background-color:#126dde;
+    color: #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
-.esqueceuSenha{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 5px;
+.LinkEsqueceuSenha{
+    margin-top: 50px;
+    position: relative;
+    text-align: right;
+    cursor: pointer;
 }
 
 
@@ -95,13 +103,13 @@
 .esqueceuSenha{
     display: none;
 }
-.esqueceuSenhaOcultar{
+.esqueceuSenhaMostrar{
     display: grid;
-    position: absolute;
+    width: 800px;
+    margin: 1px auto;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}   
+    transform: translatey(50%);
+}  
 
 .divisaoEsqueceuSenha{
     border: black 1px solid;
@@ -112,21 +120,21 @@
 .divisaoEsqueceuSenhaEsquerda{
     color: #ffffff;
     background-color: #126dde;
-    padding: 10px;
     padding: 90px 0px;
 }
 .nomeTituloDivisaoEsqueceuSenhaEsquerda{
     text-align: center;
-    margin: 10px;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 .conteudoDivisaoEsqueceuSenhaEsquerda{
-    margin: 10px;
+    text-align: justify;
     text-indent: 10px;
+    padding: 0px 10px;
 }
 
 .divisaoEsqueceuSenhaDireita{
-    display: flex;
+    display: inline;
     padding: 90px 0px;
 }
 .nomeTituloDivisaoEsqueceuSenhaDireita{
@@ -135,7 +143,7 @@
     padding-left: 10px;
 }
 .conteudoDivisaoEsqueceuSenhaDireita{
-    margin: auto;
+    margin: 50px 25%;
     margin-top: 50px;
     margin-bottom: 50px;
 }
@@ -152,11 +160,23 @@
     padding: 5px;
 }
 
+.botaoEsqueceuSenha{
+    margin: 10px auto;
+    padding: 5px 15px;
+    border: #126dde 1px solid;
+    background-color:#126dde;
+    color: #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
 #botaoVoltar{   
     position: absolute;
     right: 0;
     top: 0;
     margin: 5px;
+    cursor: pointer;
+    color: #ff0000;
 }
 
 
@@ -168,14 +188,15 @@
 }
 .acessoFuncionarioMostrar{
     display: grid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(208, 208, 208);
-    padding: 10px;
-    border-radius: 10px;
-    border: black 1px solid;
+    width: 90%;
+    margin: 1px auto;
+}
+.menuAcessoFuncionario{
+    position: relative;
+    left: 0;
+}
+.imagemFuncionario{
+    width: 10%;
 }
 
 .descricaoAcessoFuncionario{
@@ -217,15 +238,12 @@
     display: none;
 }
 .cadastroPacienteMostrar{
+    position: relative;
     display: grid;
-    position: absolute;
+    width: 60%;
+    margin: 1px auto;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(208, 208, 208);
-    padding: 10px;
-    border-radius: 10px;
-    border: black 1px solid;
+    transform: translatey(50%);
 }
 
 .descricaoCadastroPaciente{
@@ -234,4 +252,16 @@
 .descricaoCadastroPaciente input{
     text-align: center;
     float: right;
+}
+
+
+/* @media only screen and (max-width: 795px){
+    .autenticacao{
+        width: 80%;
+    }
+} */
+@media only screen and (max-width: 595px){
+    .autenticacao{
+        width: 400px;
+    }
 }

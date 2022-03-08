@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="title" id="title">Consulta | Login</title>
+    <title class="title" id="title">PCA | Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -26,15 +26,15 @@
             </div>
             <div class="divisaoAutenticacaoDireita">
                 <div class="tituloDivisaoAutenticacaoDireita">
-                    <span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span>
                     <h1 class="nomeTituloDivisaoAutenticacaoDireita">Login</h1>
                 </div>
                 <div class="conteudoDivisaoAutenticacaoDireita">
-                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Usuário</span><br><input type="text" class="campoAutenticacao" id="campoLogin" value="12345"></p>    
-                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Senha</span><br><input type="text" id="campoSenha" class="campoAutenticacao"></p>
-                    <input type="button" value="ENTRAR" class="botaoAcessar" onclick="Acessar()">
+                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Usuário</span><br><input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" value="12345"></p>    
+                    <p class="descrcaoDivisaoAutenticacao"><span class="nomeInputDivisaoAutenticacaoDireita">Senha</span><br><input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha"></p>
+                    <input type="button" value="ENTRAR" class="botaoAutenticar" onclick="Autenticacao()">
+                    <p class="LinkEsqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
                 </div>
-                <p class="esqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
+                
             </div>
         </div>
     </section>
@@ -43,21 +43,21 @@
         <div class="divisaoEsqueceuSenha">
             <div class="divisaoEsqueceuSenhaEsquerda">
                 <div class="tituloDivisaoEsqueceuSenhaEsquerda">
-                    <h1 class="nomeTituloDivisaoEsqueceuSenhaEsquerda">BEM-VINDO(A)</h1>
+                    <h1 class="nomeTituloDivisaoEsqueceuSenhaEsquerda">Esqueceu a senha?</h1>
                 </div>
                 <div class="conteudoDivisaoEsqueceuSenhaEsquerda">
-                    <p>Caso ainda não tenha usuário e senha entre em contato com o administrador da sua organização.</p>
+                    <p>Preencha os formulários para que seu administrador te ajude a mudar a senha.</p>
                 </div>
             </div>
             <div class="divisaoEsqueceuSenhaDireita">
                 <div class="tituloDivisaoEsqueceuSenhaDireita">
                     <span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span>
-                    <h1 class="nomeTituloDivisaoEsqueceuSenhaDireita">Login</h1>
+                    <h1 class="nomeTituloDivisaoEsqueceuSenhaDireita">Recuperação de senha</h1>
                 </div>
                 <div class="conteudoDivisaoEsqueceuSenhaDireita">
-                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Usuário</span><br><input type="text" class="campoEsqueceuSenha" id="campoLogin" value="12345"></p>    
-                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Senha</span><br><input type="text" id="campoSenha" class="campoEsqueceuSenha"></p>
-                    <input type="button" value="ENTRAR" class="botaoAcessar" onclick="Acessar()">
+                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Usuário</span><br><input type="text" class="campoEsqueceuSenha" id="campoEsqueceuSenhaUsuario" value=""></p>    
+                    <p class="descrcaoDivisaoEsqueceuSenha"><span class="nomeInputDivisaoEsqueceuSenhaDireita">Email</span><br><input type="email"class="campoEsqueceuSenha" id="campoEsqueceuSenhaEmail" ></p>
+                    <input type="button" value="ENVIAR" class="botaoEsqueceuSenha" onclick="Acessar()">
                 </div>
                 <p class="esqueceuSenha">Esqueceu a sua senha?</p>
             </div>
@@ -66,13 +66,17 @@
 
     
     <section class="acessoFuncionario" id="acessoFuncionario">
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value="" disabled="disabled"></p>
+        <div class="menuAcessoFuncionario">
+            <img src="img/iconeAvatar.png" class="imagemFuncionario">
+
+        </div>
+        <!-- <p class="descricaoAcessoFuncionario"><span class="nomeInput">Nome Completo: </span><input type="text" id="nomeCompletoFuncionario" value="" disabled="disabled"></p>
         <p class="descricaoAcessoFuncionario"><span class="nomeInput">Idade: </span><input type="text" id="idadeFuncionario" value="" disabled="disabled"></p>
         <p class="descricaoAcessoFuncionario"><span class="nomeInput">Grupo Saguígneo: </span><input type="text" id="grupoSanguineoFuncionario" value="" disabled="disabled"></p>
         <p class="descricaoAcessoFuncionario"><span class="nomeInput">Problemas de Saúde: </span><input type="text"id="problemasSaudeFuncionario" value="" disabled="disabled"></p>
         <p class="descricaoAcessoFuncionario"><span class="nomeInput">Alergia: </span><input type="text" id="alergiaFuncionario" value="" disabled="disabled"></p>
         <p class="descricaoAcessoFuncionario"><span class="nomeInput">Peso: </span><input type="text" id="pesoFuncionario" value="" disabled="disabled"></p>
-        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value="" disabled="disabled"></p>
+        <p class="descricaoAcessoFuncionario"><span class="nomeInput">Altura: </span><input type="text" id="alturaFuncionario" value="" disabled="disabled"></p> -->
     </section>
 
     <section class="acessoPaciente" id="acessoPaciente">
