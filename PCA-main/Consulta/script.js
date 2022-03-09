@@ -80,10 +80,23 @@ function esqueceuSenha(){
 function menuConsultarCadastro(){    
     var consultarCadastro = document.getElementById("consultarCadastro");
     
-    consultarCadastro.className = "consultarCadastroMostrar";
-}
-function consultarCadastroCriado(){    
-    var consultarCadastro = document.getElementById("consultarCadastro");
-    
     consultarCadastro.className = "consultarCadastro";
+}
+function consultarCadastroCriado(){
+    var consultarCadastro = document.getElementById("consultarCadastro");
+    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
+    
+    consultarCadastro.className = "consultarCadastroOcultar";
+    funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriadoMostrar";
+    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
+}
+function menuCadastrarPaciente(){
+    var consultarCadastro = document.getElementById("consultarCadastro");
+    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
+    
+    consultarCadastro.className = "consultarCadastroOcultar";
+    funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
 }
