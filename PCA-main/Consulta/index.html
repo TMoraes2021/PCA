@@ -6,8 +6,13 @@
     <title class="title" id="title">PCA | Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+
 </head>
-<body>    
+<body id="body" class="body">    
     <!-- <section class="acessoFuncionario" id="acessoFuncionario">
         <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
         <input type="button" value="Acessar" class="botaoAcessar" onclick="Acessar()">
@@ -17,11 +22,13 @@
     <section class="autenticacao" id="autenticacao">
         <div class="divisaoAutenticacao">
             <div class="divisaoAutenticacaoEsquerda">
-                <div class="tituloDivisaoAutenticacaoEsquerda">
-                    <h1 class="nomeTituloDivisaoAutenticacaoEsquerda">BEM-VINDO(A)</h1>
-                </div>
-                <div class="conteudoDivisaoAutenticacaoEsquerda">
-                    <p>Caso ainda não tenha usuário e senha entre em contato com o administrador da sua organização.</p>
+                <div class="divisaoAutenticacaoEsquerdas">
+                    <div class="tituloDivisaoAutenticacaoEsquerda">
+                        <h1 class="nomeTituloDivisaoAutenticacaoEsquerda">BEM-VINDO(A)</h1>
+                    </div>
+                    <div class="conteudoDivisaoAutenticacaoEsquerda">
+                        <p>Caso ainda não tenha usuário e senha entre em contato com o administrador da sua organização.</p>
+                    </div>
                 </div>
             </div>
             <div class="divisaoAutenticacaoDireita">
@@ -40,8 +47,8 @@
                         <input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="">
                     </p>
                     <input type="button" value="ENTRAR" class="botaoAutenticar" onclick="Autenticacao()">
-                    <p class="LinkEsqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
                 </div>
+                <p class="LinkEsqueceuSenha" onclick="esqueceuSenha()">Esqueceu a sua senha?</p>
                 
             </div>
         </div>
@@ -58,8 +65,8 @@
                 </div>
             </div>
             <div class="divisaoEsqueceuSenhaDireita">
+                <p class="LinkbotaoVoltar"><span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span></p>
                 <div class="tituloDivisaoEsqueceuSenhaDireita">
-                    <span class="material-icons" id="botaoVoltar" onclick="window.location.reload()">arrow_back</span>
                     <h1 class="nomeTituloDivisaoEsqueceuSenhaDireita">Recuperação de senha</h1>
                 </div>
                 <div class="conteudoDivisaoEsqueceuSenhaDireita">
@@ -73,7 +80,6 @@
                     </p>
                     <input type="button" value="ENVIAR" class="botaoEsqueceuSenha" onclick="Acessar()">
                 </div>
-                <p class="esqueceuSenha">Esqueceu a sua senha?</p>
             </div>
         </div>
     </section>
@@ -89,10 +95,11 @@
             </div>
 
             <div class="dadosMenuAcessoFuncionario">
-                <p class="dadoMenuAcessoFuncionario" id="menuConsultarCadastro" onclick="menuConsultarCadastro()">Consultar cadastro</p>
-                <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()">Cadastrar paciente</p>
-                <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()">Criar ficha de atendimento</p>
-                <p class="dadoMenuAcessoFuncionario" id="menuConsultarHistorico" onclick="menuConsultarHistorico()">Consultar histórico</p>
+                <p class="dadoMenuAcessoFuncionario" id="menuConsultarCadastro" onclick="menuConsultarCadastro()" onmouseover="dadoMenuAcessoFuncionarioOver()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuConsultarCadastro">how_to_reg</span> <span class="nomeDadoMenuAcessoFuncionario">Consultar cadastro</span></p>
+                <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCadastrarPaciente">person_add</span> <span class="nomeDadoMenuAcessoFuncionario">Cadastrar paciente</span></p>
+                <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCriarFichaAtendimento">create_new_folder</span> <span class="nomeDadoMenuAcessoFuncionario">Criar ficha de atendimento</span></p>
+                <p class="dadoMenuAcessoFuncionario" id="menuConsultarHistorico" onclick="menuConsultarHistorico()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuConsultarHistorico">history</span> <span class="nomeDadoMenuAcessoFuncionario">Consultar histórico</span></p>
+                <p class="dadoMenuAcessoFuncionario" id="menuFazerLogoof" onclick="document.location.reload()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuFazerLogoof">logout</span><span class="nomeDadoMenuAcessoFuncionario"> Fazer logoof</span></p>
             </div>
         </div>
 

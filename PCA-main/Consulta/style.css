@@ -1,13 +1,21 @@
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: Arial;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: linear-gradient(180deg, #0B78A7, #23E5FF);
+}
+.fundoBranco{
+    background: #f0f0f0;
 }
 
 
 /* autenticacao */
-.autenticacao{
+/* .autenticacao{
     display: none;
 }
 .autenticacaoMostrar{
@@ -16,29 +24,30 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} */
 .autenticacao{
-    display: grid;
-    width: 800px;
-    margin: 1px auto;
-    top: 50%;
-    transform: translatey(50%);
-
+    display: flex;
+    height: 100vh;
 }
 .autenticacaoOcultar{
     display: none;
 }
 
 .divisaoAutenticacao{
-    border: black 1px solid;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 10px #0000002c;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .divisaoAutenticacaoEsquerda{
     color: #ffffff;
-    background-color: #126dde;
-    padding: 90px 0px;
+    background:url(img/fundo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 40% 0px;
 }
 .nomeTituloDivisaoAutenticacaoEsquerda{
     text-align: center;
@@ -53,18 +62,17 @@
 
 .divisaoAutenticacaoDireita{
     display: inline;
-    padding-top: 90px;
+    padding: 15% 0px;
+    background-color: #ffffff;
 }
 .nomeTituloDivisaoAutenticacaoDireita{
-    color:#126dde;
+    color: #0B78A7;
     font-size: 30px;
     padding-left: 10px;
 }
 .conteudoDivisaoAutenticacaoDireita{
-
     margin: 50px 25%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .descricaoDivisaoAutenticacao{
     margin: 5px 0px;
@@ -92,35 +100,37 @@
 }
 
 .LinkEsqueceuSenha{
-    margin-top: 50px;
-    position: relative;
     text-align: right;
+    padding-right: 5px;
     cursor: pointer;
+    margin-top: 31%;
+    margin-bottom: -13%;
 }
-
 
 /*Esqueceu Senha*/
 .esqueceuSenha{
     display: none;
 }
 .esqueceuSenhaMostrar{
-    display: grid;
-    width: 800px;
-    margin: 1px auto;
-    top: 50%;
-    transform: translatey(50%);
-}  
+    display: flex;
+    height: 100vh;
+}
 
 .divisaoEsqueceuSenha{
-    border: black 1px solid;
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    box-shadow: 0px 0px 20px 10px #0000002c;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 .divisaoEsqueceuSenhaEsquerda{
     color: #ffffff;
-    background-color: #126dde;
-    padding: 90px 0px;
+    background:url(img/fundo1.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding: 40% 0px;
 }
 .nomeTituloDivisaoEsqueceuSenhaEsquerda{
     text-align: center;
@@ -135,17 +145,17 @@
 
 .divisaoEsqueceuSenhaDireita{
     display: inline;
-    padding: 90px 0px;
+    padding: 15% 0px;
+    background-color: #ffffff;
 }
 .nomeTituloDivisaoEsqueceuSenhaDireita{
-    color:#126dde;
+    color: #0B78A7;
     font-size: 30px;
     padding-left: 10px;
 }
 .conteudoDivisaoEsqueceuSenhaDireita{
     margin: 50px 25%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 .descricaoDivisaoEsqueceuSenha{
     margin: 5px 0px;
@@ -155,9 +165,11 @@
 }
 
 .campoEsqueceuSenha{
+    width: 100%;
     text-align: center;
-    border: black 1px solid;
+    border: #000000 1px solid;
     padding: 5px;
+    margin-bottom: 5px;
 }
 
 .botaoEsqueceuSenha{
@@ -170,13 +182,13 @@
     cursor: pointer;
 }
 
-#botaoVoltar{   
-    position: absolute;
-    right: 0;
-    top: 0;
-    margin: 5px;
+.LinkbotaoVoltar{
+    text-align: right;
+    padding-right: 5px;
     cursor: pointer;
     color: #ff0000;
+    margin-top: -15%;
+    margin-bottom: 8%;
 }
 
 
@@ -189,14 +201,14 @@
 .acessoFuncionarioMostrar{
     display: grid;
     width: 100%;
-    margin: 1px auto;
+    margin: 0px auto;
     grid-template-columns: 220px auto;
 }
 .menuAcessoFuncionario{
     position: relative;
     left: 0;
-    background-color: #126dde;
-    height: 99.8vh;
+    background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
+    height: 100vh;
 }
 .dadosAcessoFuncionario{
     display: grid;
@@ -206,23 +218,46 @@
     width: 150px;
     height: 150px;
     margin: 15px auto;
+    border-radius: 50%;
 }
 .conteudoMenuAcessoFuncionario{
     margin: 1px 0px;
-    margin-left: 25px;
+    margin-left: 35px;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 13px;
 }
 .dadosMenuAcessoFuncionario{
     margin: 2px;
     margin-top: 55px;
 }
 .dadoMenuAcessoFuncionario{
-    margin: 20px 0px;
+    margin: 10px 0px;
+    padding: 10px 0px;
     margin-left: 7px;
-    font-size: 17px;
     color: #ffffff;
     cursor: pointer;
+}
+.dadoMenuAcessoFuncionario:hover{
+    background: #ffffff;
+    color: #0B78A7;
+    margin-left: 0px;
+    padding-left: 7px;
+    font-weight: bold;
+
+}
+.nomeDadoMenuAcessoFuncionario{
+    font-size: 16px;
+    margin: 5px 0px;
+}
+.iconedadoMenuAcessoFuncionario{
+    margin-right: 4px;
+    font-size: 2px;
+}
+/* #iconeMenuCadastrarPaciente{
+    transform: rotateY(180deg);
+} */
+#iconeMenuFazerLogoof{
+    transform:rotate(180deg);
 }
 
 
@@ -378,7 +413,7 @@
     background-color: rgb(208, 208, 208);
     padding: 10px;
     border-radius: 10px;
-    border: black 1px solid;
+    border: #000000 1px solid;
 }
 
 .descricaoAcessoPaciente{
@@ -417,8 +452,8 @@
         width: 80%;
     }
 } */
-@media only screen and (max-width: 595px){
+/* @media only screen and (max-width: 595px){
     .autenticacao, .esqueceuSenhaMostrar{
         width: 400px;
     }
-}
+} */

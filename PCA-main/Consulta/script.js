@@ -1,5 +1,6 @@
 function Autenticacao(){
     var title = document.getElementById("title");
+    var body = document.getElementById("body");
 
     var campoLogin = document.getElementById("campoAutenticacaoUsuario").value;
     var quantVet = parseInt(campoLogin.length);
@@ -25,6 +26,9 @@ function Autenticacao(){
     var acessoFuncionario = document.getElementById("acessoFuncionario");
 
     if(campoLogin == "12345"){
+        title.innerHTML = "PCA | Funcionário";
+        body.className = "fundoBranco";
+
         nomeCompletoFuncionario.value = "Alcimar";
         idadeFuncionario.value = "52";
         grupoSanguineoFuncionario.value = "O+";
@@ -34,9 +38,11 @@ function Autenticacao(){
         alturaFuncionario.value = "1,60 m";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "PCA | Funcionário";
     }
     else if(campoLogin == "00123456789"){
+        title.innerHTML = "PCA | Paciente";
+        body.className = "fundoBranco";
+
         nomeCompletoPaciente.value = "Lucas";
         idadePaciente.value = "20";
         grupoSanguineoPaciente.value = "O-";
@@ -46,19 +52,22 @@ function Autenticacao(){
         alturaPaciente.value = "1,80 m";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "PCA | Paciente";
     }
     else if(quantVet == 5){
+        title.innerHTML = "PCA | Funcionário";
+        body.className = "fundoBranco";
+
         nomeCompletoFuncionario.value = "Funcionário";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "PCA | Funcionário";
     }
     else if(quantVet == 11){
+        title.innerHTML = "PCA | Paciente";
+        body.className = "fundoBranco";
+
         nomeCompletoPaciente.value = "Paciente";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
-        title.innerHTML = "PCA | Paciente";
     }
 }
 
@@ -82,6 +91,12 @@ function menuConsultarCadastro(){
     
     consultarCadastro.className = "consultarCadastro";
 }
+function dadoMenuAcessoFuncionarioOver(){
+    var dadoMenuAcessoFuncionario = document.getElementById("dadoMenuAcessoFuncionario");
+    
+    dadoMenuAcessoFuncionario.className = "dadoMenuAcessoFuncionarioOver";
+}
+
 function consultarCadastroCriado(){
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
