@@ -1,11 +1,20 @@
 function Autenticacao(){
+    var campoAutenticacaoUsuario = document.getElementById("campoAutenticacaoUsuario").value;
+    var campoAutenticacaoSenha = document.getElementById("campoAutenticacaoSenha").value;
+    /* var quantVet = parseInt(campoAutenticacaoUsuario.length); */
+
+    var autenticacao = document.getElementById("autenticacao");
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+
     var title = document.getElementById("title");
     var body = document.getElementById("body");
 
-    var campoLogin = document.getElementById("campoAutenticacaoUsuario").value;
-    var quantVet = parseInt(campoLogin.length);
+    var acessoFuncionarioNome = document.getElementById("acessoFuncionarioNome");
+    var acessoFuncionarioMatricula = document.getElementById("acessoFuncionarioMatricula").value;
+    var acessoFuncionarioFuncao = document.getElementById("acessoFuncionarioFuncao");
 
-    var nomeCompletoFuncionario = document.getElementById("nomeCompletoFuncionario");
+    
+    /* var nomeCompletoFuncionario = document.getElementById("nomeCompletoFuncionario");
     var idadeFuncionario = document.getElementById("idadeFuncionario");
     var grupoSanguineoFuncionario = document.getElementById("grupoSanguineoFuncionario");
     var problemasSaudeFuncionario = document.getElementById("problemasSaudeFuncionario");
@@ -19,14 +28,21 @@ function Autenticacao(){
     var problemasSaudePaciente = document.getElementById("problemasSaudePaciente");
     var alergiaPaciente = document.getElementById("alergiaPaciente");
     var pesoPaciente = document.getElementById("pesoPaciente");
-    var alturaPaciente = document.getElementById("alturaPaciente");
+    var alturaPaciente = document.getElementById("alturaPaciente"); */
 
-    
-    var autenticacao = document.getElementById("autenticacao");
-    var acessoFuncionario = document.getElementById("acessoFuncionario");
+    if(campoAutenticacaoUsuario == "589045" && campoAutenticacaoSenha == "589045"){
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        autenticacao.className = "autenticacaoOcultar";
 
-    if(campoLogin == "12345"){
-        title.innerHTML = "PCA | Funcionário";
+        title.innerHTML = "TBMGN | Funcionário";
+        body.className = "fundoBranco";
+
+        acessoFuncionarioNome.innerHTML = "Jeniffer Lopez";
+        acessoFuncionarioMatricula = "589045";
+        acessoFuncionarioFuncao.innerHTML = "Recepcionista";
+    }
+    /* else if(campoAutenticacaoUsuario == "12345"){
+        title.innerHTML = "TBMGN | Funcionário";
         body.className = "fundoBranco";
 
         nomeCompletoFuncionario.value = "Alcimar";
@@ -39,8 +55,8 @@ function Autenticacao(){
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
     }
-    else if(campoLogin == "00123456789"){
-        title.innerHTML = "PCA | Paciente";
+    else if(campoAutenticacaoUsuario == "00123456789"){
+        title.innerHTML = "TBMGN | Paciente";
         body.className = "fundoBranco";
 
         nomeCompletoPaciente.value = "Lucas";
@@ -54,7 +70,7 @@ function Autenticacao(){
         autenticacao.className = "autenticacaoOcultar";
     }
     else if(quantVet == 5){
-        title.innerHTML = "PCA | Funcionário";
+        title.innerHTML = "TBMGN | Funcionário";
         body.className = "fundoBranco";
 
         nomeCompletoFuncionario.value = "Funcionário";
@@ -62,13 +78,13 @@ function Autenticacao(){
         autenticacao.className = "autenticacaoOcultar";
     }
     else if(quantVet == 11){
-        title.innerHTML = "PCA | Paciente";
+        title.innerHTML = "TBMGN | Paciente";
         body.className = "fundoBranco";
 
         nomeCompletoPaciente.value = "Paciente";
         acessoPaciente.className = "acessoPacienteMostrar";
         autenticacao.className = "autenticacaoOcultar";
-    }
+    } */
 }
 
 
@@ -79,7 +95,7 @@ function esqueceuSenha(){
     var esqueceuSenha = document.getElementById("esqueceuSenha");
 
     
-    title.innerHTML = "PCA | Esqueceu senha";
+    title.innerHTML = "TBMGN | Esqueceu senha";
     
     autenticacao.className = "autenticacaoOcultar";
     esqueceuSenha.className = "esqueceuSenhaMostrar";

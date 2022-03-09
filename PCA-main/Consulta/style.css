@@ -261,14 +261,7 @@ body{
 }
 
 
-/* .descricaoAcessoFuncionario{
-    margin: 5px 0px;
-}
-.descricaoAcessoFuncionario input{
-    text-align: center;
-    float: right;
-}
- */
+/* consultarCadastro */
 .consultarCadastro{
     display: inline;
     margin: auto;
@@ -279,9 +272,9 @@ body{
 
 .nomeTituloConsultarCadastro{
     font-size: 40px;
-    text-align: center;
     color: #126dde;
-    width: 100%;
+    margin-top: -95%;
+    margin-bottom: 95%;
 }
 .conteudoConsultarCadastro{
     width: 10vw;
@@ -299,11 +292,16 @@ body{
 }
 
 
+/*funcionarioConsultarCadastroCriado*/
+.tituloFuncionarioConsultarCadastroCriado{
+    margin: auto;
+}
 .nomeTituloFuncionarioConsultarCadastroCriado{
-    font-size: 40px;
     text-align: center;
+    font-size: 40px;
     color: #126dde;
-    width: 100%;
+    /* margin-top: -38.8%;
+    margin-bottom: 38.8%; */
 }
 .funcionarioConsultarCadastroCriado{
     display: none;
@@ -313,58 +311,107 @@ body{
     margin: auto;
     display: inline;
 }
-#divisaoFuncionarioConsultarCadastroCriado1, #divisaoFuncionarioConsultarCadastroCriado2{
-    display: grid;
-    grid-template-columns: 50% 50%;
+
+.divisaoFuncionarioConsultarCadastroCriado{
+    display:flex;
+    flex-wrap:wrap;
+    width: 530px;
+    margin: auto;
+    background-color: aqua;
 }
-#divisaoFuncionarioConsultarCadastroCriado3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.descricaoFuncionarioConsultarCadastroCriado{
+    flex:1 1 auto;
+    margin: 5px 3px;
+    background-color: red;
 }
-#funcionarioConsultarCadastroCriadoNomeCompleto{
-    width: 400px;
+#descricaoFuncionarioConsultarCadastroCriadoCPF, #descricaoFuncionarioConsultarCadastroCriadoProntuario{
+    width: 250px;
 }
-#funcionarioConsultarCadastroCriadoTipoSaguineo, #funcionarioConsultarCadastroCriadoNumero{
+#funcionarioConsultarCadastroCriadoCPF, #funcionarioConsultarCadastroCriadoProntuario{
+    width: 250px;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoNomeCompleto, #descricaoFuncionarioConsultarCadastroCriadoPontoReferencia{
+    width: 420px;
+}
+#funcionarioConsultarCadastroCriadoNomeCompleto, #funcionarioConsultarCadastroCriadoPontoReferencia{
+    width: 420px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo, #descricaoFuncionarioConsultarCadastroCriadoNumero, #descricaoFuncionarioConsultarCadastroCriadoUF, #descricaoFuncionarioConsultarCadastroCriadoSexo{
     width: 90px;
-} #descricaoFuncionarioConsultarCadastroCriadoCPF{
-    width: 500px;
 }
-#descricaoFuncionarioConsultarCadastroCriadoProntuario{
-    width: 500px;
+#funcionarioConsultarCadastroCriadoTipoSaguineo, #funcionarioConsultarCadastroCriadoNumero, #funcionarioConsultarCadastroCriadoUF, #funcionarioConsultarCadastroCriadoSexo{
+    width: 90px;
+    text-align: center;
 }
-/*
-#descricaoFuncionarioConsultarCadastroCriadoNomeCompleto{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-#descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 2;
-}
-#descricaoFuncionarioConsultarCadastroCriadoCEP{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-#descricaoFuncionarioConsultarCadastroCriadoRua{
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 3;
-}
-#descricaoFuncionarioConsultarCadastroCriadoNumero{
-    grid-column-start: 6;
-    grid-column-end: 6;
-    grid-row-start: 3;
-    grid-row-end: 3;
-} */
 
 
+#descricaoFuncionarioConsultarCadastroCriadoEmail{
+    width: 330px;
+
+}
+#funcionarioConsultarCadastroCriadoEmail{
+    width: 330px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoTelefone{
+    width: 170px;
+
+}
+#funcionarioConsultarCadastroCriadoTelefone{
+    width: 170px;
+    text-align: center;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoCEP, #descricaoFuncionarioConsultarCadastroCriadoEstadoCivil{
+    width: 110px;
+}
+#funcionarioConsultarCadastroCriadoCEP, #funcionarioConsultarCadastroCriadoEstadoCivil{
+    width: 110px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoRua, #descricaoFuncionarioConsultarCadastroCriadoLocalNascimento{
+    width: 299px;
+}
+#funcionarioConsultarCadastroCriadoRua, #funcionarioConsultarCadastroCriadoLocalNascimento{
+    width: 299px;
+}
+
+#descricaoFuncionarioConsultarCadastroCriadoComplemento, #descricaoFuncionarioConsultarCadastroCriadoCidade, #descricaoFuncionarioConsultarCadastroCriadoMunicipio{
+    width: 165px;
+}
+#funcionarioConsultarCadastroCriadoComplemento, #funcionarioConsultarCadastroCriadoCidade, #funcionarioConsultarCadastroCriadoMunicipio{
+    width: 165px;
+}
+
+
+#descricaoFuncionarioConsultarCadastroCriadoNomePai, #descricaoFuncionarioConsultarCadastroCriadoNomeMae{
+    width: 390px;
+
+}
+#funcionarioConsultarCadastroCriadoNomePai, #funcionarioConsultarCadastroCriadoNomeMae{
+    width: 390px;
+    text-align: center;
+}
+#descricaoFuncionarioConsultarCadastroCriadoTelefonePai, #descricaoFuncionarioConsultarCadastroCriadoTelefoneMae{
+    width: 120px;
+
+}
+#funcionarioConsultarCadastroCriadoTelefonePai, #funcionarioConsultarCadastroCriadoTelefoneMae{
+    width: 120px;
+    text-align: center;
+}
+
+
+
+
+.inputFuncionarioConsultarCadastroCriado{
+    padding: 5px;
+}
+/**/
 .nomeTituloFuncionarioCadastrarPaciente{
     font-size: 40px;
     text-align: center;

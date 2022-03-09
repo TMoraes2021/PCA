@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="title" id="title">PCA | Login</title>
+    <title class="title" id="title">TBMGN | Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="img/logo3.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,12 +40,12 @@
                     <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoUsuario">
                         <label class="nomeInputDivisaoAutenticacaoDireita">Usuário</label>
                         <br>
-                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" name="campoAutenticacaoUsuario" value="12345">
+                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" name="campoAutenticacaoUsuario" value="589045">
                     </p>    
                     <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoSenha">
                         <label class="nomeInputDivisaoAutenticacaoDireita">Senha</label>
                         <br>
-                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="">
+                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="589045">
                     </p>
                     <input type="button" value="ENTRAR" class="botaoAutenticar" onclick="Autenticacao()">
                 </div>
@@ -89,9 +90,15 @@
         <div class="menuAcessoFuncionario" id="menuAcessoFuncionario">
             <div class="dadosAcessoFuncionario">
                 <img src="img/iconeAvatar.png" class="imagemFuncionario">
-                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioNome">Nome: <span class="acessoFuncionarioNome">Jeniffer Lopez</span></p>
-                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioMatricula">Matrícula: <span class="acessoFuncionarioMatricula">589045</span></p>
-                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioFuncao">Função: <span class="acessoFuncionarioFuncao">Recepcionista</span></p>
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioNome">Nome: 
+                    <span class="acessoFuncionario" id="acessoFuncionarioNome"></span>
+                </p>
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioMatricula">Matrícula: 
+                    <input type="text" class="acessoFuncionario" id="acessoFuncionarioMatricula">
+                </p>
+                <p class="conteudoMenuAcessoFuncionario" id="conteudoMenuAcessoFuncionarioFuncao">Função: 
+                    <span class="acessoFuncionario" id="acessoFuncionarioFuncao"></span>
+                </p>
             </div>
 
             <div class="dadosMenuAcessoFuncionario">
@@ -104,56 +111,111 @@
         </div>
 
         <div class="consultarCadastro" id="consultarCadastro">
-            <div class="tituloConsultarCadastro" id="tituloConsultarCadastro">
-                <h1 class="nomeTituloConsultarCadastro">CONSULTAR CADASTRO</h1>
-            </div>            
-            <div class="conteudoConsultarCadastro" id="conteudoConsultarCadastro">
-                <p class="descricaoConsultarCadastro">
-                    <label class="nomeInputconsultarCadastro">CPF</label>
-                    <br>
-                    <input type="text"class="campoEsqueceuSenha" id="campoEsqueceuSenhaCPF">
-                </p>
-                <input type="button" value="CONSULTAR" class="botaoConsultarCadastro" onclick="consultarCadastroCriado()">
+            <div class="pesquisarConsultarCadastro" id="pesquisarConsultarCadastro"></div>
+                <div class="tituloConsultarCadastro" id="tituloConsultarCadastro">
+                    <h1 class="nomeTituloConsultarCadastro">CONSULTAR CADASTRO</h1>
+                </div>            
+                <div class="conteudoConsultarCadastro" id="conteudoConsultarCadastro">
+                    <p class="descricaoConsultarCadastro">
+                        <label class="nomeInputconsultarCadastro">CPF</label>
+                        <br>
+                        <input type="text"class="campoEsqueceuSenha" id="campoEsqueceuSenhaCPF">
+                    </p>
+                    <input type="button" value="CONSULTAR" class="botaoConsultarCadastro" onclick="consultarCadastroCriado()">
+                </div>
             </div>
-        </div>
 
-        <div class="funcionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriado">
-            <div class="tituloFuncionarioConsultarCadastroCriado" id="tituloFuncionarioConsultarCadastroCriado">
-                <h1 class="nomeTituloFuncionarioConsultarCadastroCriado">CONSULTAR CADASTRO</h1>
-            </div>            
-            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado1">
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCPF">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCPF" id="funcionarioConsultarCadastroCriadoCPF">CPF</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCPF" name="funcionarioConsultarCadastroCriadoCPF" value="" disabled="disabled">
-                </p>
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoProntuario">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoProntuario" id="funcionarioConsultarCadastroCriadoProntuario">Prontuário</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoProntuario" name="funcionarioConsultarCadastroCriadoProntuario" value="" disabled="disabled">
-                </p>
-            </div>
-            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado2">
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomeCompleto">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNomeCompleto" id="funcionarioConsultarCadastroCriadoNomeCompleto">Nome Completo</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNomeCompleto" name="funcionarioConsultarCadastroCriadoNomeCompleto" value="" disabled="disabled">
-                </p>
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTipoSaguineo" id="funcionarioConsultarCadastroCriadoTipoSaguineo">Tipo Saguíneo</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTipoSaguineo" name="funcionarioConsultarCadastroCriadoTipoSaguineo" value="" disabled="disabled">
-                </p>
-            </div>
-            <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado3">
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCEP">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCEP" id="funcionarioConsultarCadastroCriadoCEP">CEP</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCEP" name="funcionarioConsultarCadastroCriadoCEP" value="" disabled="disabled">
-                </p>
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoRua">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoRua" id="funcionarioConsultarCadastroCriadoRua">Rua</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoRua" name="funcionarioConsultarCadastroCriadoRua" value="" disabled="disabled">
-                </p>
-                <p class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNumero">
-                    <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNumero" id="funcionarioConsultarCadastroCriadoNumero">Número</label><br>
-                    <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNumero" name="funcionarioConsultarCadastroCriadoNumero" value="" disabled="disabled">
-                </p>
+            <div class="funcionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriado">
+                <div class="tituloFuncionarioConsultarCadastroCriado" id="tituloFuncionarioConsultarCadastroCriado">
+                    <h1 class="nomeTituloFuncionarioConsultarCadastroCriado">CONSULTAR CADASTRO</h1>
+                </div>            
+                <div class="divisaoFuncionarioConsultarCadastroCriado" id="divisaoFuncionarioConsultarCadastroCriado">
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCPF">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCPF" id="funcionarioConsultarCadastroCriadoCPF">CPF</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCPF" name="funcionarioConsultarCadastroCriadoCPF" value="852.631.490-75" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoProntuario">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoProntuario" id="funcionarioConsultarCadastroCriadoProntuario">Prontuário</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoProntuario" name="funcionarioConsultarCadastroCriadoProntuario" value="26.7908" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomeCompleto">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNomeCompleto" id="funcionarioConsultarCadastroCriadoNomeCompleto">Nome Completo</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNomeCompleto" name="funcionarioConsultarCadastroCriadoNomeCompleto" value="JOAQUIM OLIVEIRA MONOEL QUEIROZ DA SILVA" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTipoSaguineo" id="funcionarioConsultarCadastroCriadoTipoSaguineo">Tipo Saguíneo</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTipoSaguineo" name="funcionarioConsultarCadastroCriadoTipoSaguineo" value="O+" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoEmail">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoEmail" id="funcionarioConsultarCadastroCriadoEmail">Email</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoEmail" name="funcionarioConsultarCadastroCriadoEmail" value="joaquimroz@unigranrio.br" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefone">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefone" id="funcionarioConsultarCadastroCriadoTelefone">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTelefone" name="funcionarioConsultarCadastroCriadoTelefone" value="(21) 9 9548-6280" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCEP">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCEP" id="funcionarioConsultarCadastroCriadoCEP">CEP</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCEP" name="funcionarioConsultarCadastroCriadoCEP" value="89.456-481" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoRua">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoRua" id="funcionarioConsultarCadastroCriadoRua">Rua</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoRua" name="funcionarioConsultarCadastroCriadoRua" value="ESTRADA DA LIGAÇÃO" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNumero">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNumero" id="funcionarioConsultarCadastroCriadoNumero">Número</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNumero" name="funcionarioConsultarCadastroCriadoNumero" value="500" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoComplemento">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoComplemento" id="funcionarioConsultarCadastroCriadoComplemento">Complemento</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoComplemento" name="funcionarioConsultarCadastroCriadoComplemento" value="LOTE:49 QUADRA:52" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCidade">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoCidade" id="funcionarioConsultarCadastroCriadoCidade">Cidade</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoCidade" name="funcionarioConsultarCadastroCriadoCidade" value="BELFORD-ROXO" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoMunicipio">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoMunicipio" id="funcionarioConsultarCadastroCriadoMunicipio">Município</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoMunicipio" name="funcionarioConsultarCadastroCriadoMunicipio" value="RIO DE JANEIRO" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoPontoReferencia">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoPontoReferencia" id="funcionarioConsultarCadastroCriadoPontoReferencia">Ponto de Referência</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoPontoReferencia" name="funcionarioConsultarCadastroCriadoPontoReferencia" value="BELFORD-ROXO" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoUF">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoUF" id="funcionarioConsultarCadastroCriadoUF">UF</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoUF" name="funcionarioConsultarCadastroCriadoUF" value="RJ" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoLocalNascimento">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoLocalNascimento" id="funcionarioConsultarCadastroCriadoLocalNascimento">Local de Nascimento</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoLocalNascimento" name="funcionarioConsultarCadastroCriadoLocalNascimento" value="JACAREPAGUÁ" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoEstadoCivil">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoEstadoCivil" id="funcionarioConsultarCadastroCriadoEstadoCivil">Estado Civil</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoEstadoCivil" name="funcionarioConsultarCadastroCriadoEstadoCivil" value="CASADO" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoSexo">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoSexo" id="funcionarioConsultarCadastroCriadoSexo">Sexo</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoSexo" name="funcionarioConsultarCadastroCriadoSexo" value="M" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomePai">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNomePai" id="funcionarioConsultarCadastroCriadoNomePai">Nome do Pai</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNomePai" name="funcionarioConsultarCadastroCriadoNomePai" value="M" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefonePai">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefonePai" id="funcionarioConsultarCadastroCriadoTelefonePai">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTelefonePai" name="funcionarioConsultarCadastroCriadoTelefonePai" value="M" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomeMae">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoNomeMae" id="funcionarioConsultarCadastroCriadoNomeMae">Nome da Mãe</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoNomeMae" name="funcionarioConsultarCadastroCriadoNomeMae" value="(21) 9 9548-6280" disabled="disabled">
+                    </div>
+                    <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefoneMae">
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefoneMae" id="funcionarioConsultarCadastroCriadoTelefoneMae">(DD) Telefone</label><br>
+                        <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="funcionarioConsultarCadastroCriadoTelefoneMae" name="funcionarioConsultarCadastroCriadoTelefoneMae" value="(21) 9 9548-6280" disabled="disabled">
+                    </div>
+
+                </div>
             </div>
         </div>
 
