@@ -25,6 +25,17 @@ function Autenticacao(){
         nomeAcessoFuncionarioMatricula.innerHTML = "589045";
         nomeAcessoFuncionarioFuncao.innerHTML = "Recepcionista";
     }
+    else if(campoAutenticacaoUsuario == "12345" && campoAutenticacaoSenha == "12345"){
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        autenticacao.className = "autenticacaoOcultar";
+
+        title.innerHTML = "TBMGN | Funcionário";
+        body.className = "fundoBranco";
+
+        nomeAcessoFuncionarioNome.innerHTML = "João Paulo";
+        nomeAcessoFuncionarioMatricula.innerHTML = "12345";
+        nomeAcessoFuncionarioFuncao.innerHTML = "Doutor";
+    }
 }
 
 
@@ -106,7 +117,7 @@ function consultarCadastroCriado(){
         inputFuncionarioConsultarCadastroCriadoComplemento.value = "LOTE:49 QUADRA:52";
         inputFuncionarioConsultarCadastroCriadoCidade.value = "BELFORD-ROXO";
         inputFuncionarioConsultarCadastroCriadoMunicipio.value = "RIO DE JANEIRO";
-        inputFuncionarioConsultarCadastroCriadoPontoReferencia.value = "BELFORD-ROXO";
+        inputFuncionarioConsultarCadastroCriadoPontoReferencia.value = "CIEP366";
         inputFuncionarioConsultarCadastroCriadoUF.value = "RJ";
         inputFuncionarioConsultarCadastroCriadoLocalNascimento.value = "JACAREPAGUÁ";
         inputFuncionarioConsultarCadastroCriadoEstadoCivil.value = "CASADO";
@@ -121,6 +132,39 @@ function consultarCadastroCriado(){
         inputFuncionarioConsultarCadastroCriadoAlergias.value = "";
         inputFuncionarioConsultarCadastroCriadoDoencasCronicas.value = "DIABETE";
         inputFuncionarioConsultarCadastroCriadoRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
+    }
+    else if(campoConsultarCadastroCPF == "01234567890"){    
+        consultarCadastro.className = "consultarCadastroOcultar";
+        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriadoMostrar";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
+        
+        inputFuncionarioConsultarCadastroCriadoCPF.value = "012.345.678-90";
+        inputFuncionarioConsultarCadastroCriadoProntuario.value = "26.7909";
+        inputFuncionarioConsultarCadastroCriadoNomeCompleto.value = "BARBARA COSTA DE OLIVEIRA";
+        inputFuncionarioConsultarCadastroCriadoTipoSaguineo.value = "O-";
+        inputFuncionarioConsultarCadastroCriadoEmail.value = "barbinha123@unigranrio.br";
+        inputFuncionarioConsultarCadastroCriadoTelefone.value = "(21) 9 9548-6280";
+        inputFuncionarioConsultarCadastroCriadoCEP.value = "89.456-481";
+        inputFuncionarioConsultarCadastroCriadoRua.value = "ESTRADA DA LIGAÇÃO";
+        inputFuncionarioConsultarCadastroCriadoNumero.value = "500";
+        inputFuncionarioConsultarCadastroCriadoComplemento.value = "LOTE:49 QUADRA:52";
+        inputFuncionarioConsultarCadastroCriadoCidade.value = "DUQUE DE CAXIAS";
+        inputFuncionarioConsultarCadastroCriadoMunicipio.value = "RIO DE JANEIRO";
+        inputFuncionarioConsultarCadastroCriadoPontoReferencia.value = "UNIGRANRIO";
+        inputFuncionarioConsultarCadastroCriadoUF.value = "RJ";
+        inputFuncionarioConsultarCadastroCriadoLocalNascimento.value = "JACAREPAGUÁ";
+        inputFuncionarioConsultarCadastroCriadoEstadoCivil.value = "CASADO";
+        inputFuncionarioConsultarCadastroCriadoSexo.value = "F";
+        inputFuncionarioConsultarCadastroCriadoNomePai.value = "WALDIR DE OLIVEIRA";
+        inputFuncionarioConsultarCadastroCriadoTelefonePai.value = "(21) 9 9548-6280";
+        inputFuncionarioConsultarCadastroCriadoNomeMae.value = "MAIRA COSTA DE OLIVEIRA";
+        inputFuncionarioConsultarCadastroCriadoTelefoneMae.value = "(21) 9 9548-6280";
+        inputFuncionarioConsultarCadastroCriadoTipoMedico.value = "ORTOPEDIA";
+        inputFuncionarioConsultarCadastroCriadoSalaAtendimento.value = "A";
+        inputFuncionarioConsultarCadastroCriadoSintomas.value = "DORES ABDOMINAIS";
+        inputFuncionarioConsultarCadastroCriadoAlergias.value = "";
+        inputFuncionarioConsultarCadastroCriadoDoencasCronicas.value = "";
+        inputFuncionarioConsultarCadastroCriadoRemediosControlados.value = "";
     }
 }
 function menuCadastrarPaciente(){

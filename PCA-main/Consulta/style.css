@@ -228,6 +228,10 @@ body{
     margin-left: 35px;
     color: #ffffff;
     font-size: 13px;
+    font-weight: 600;
+}
+.nomeAcessoFuncionario{
+    font-weight: 100;
 }
 .dadosMenuAcessoFuncionario{
     margin: 2px;
