@@ -83,6 +83,7 @@ body{
 
 .campoAutenticacao{
     width: 100%;
+    min-width: 60px;
     text-align: center;
     border: #000000 1px solid;
     padding: 5px;
@@ -166,6 +167,7 @@ body{
 
 .campoEsqueceuSenha{
     width: 100%;
+    min-width: 120px;
     text-align: center;
     border: #000000 1px solid;
     padding: 5px;
@@ -208,7 +210,8 @@ body{
     position: relative;
     left: 0;
     background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
 }
 .dadosAcessoFuncionario{
     display: grid;
@@ -220,7 +223,7 @@ body{
     margin: 15px auto;
     border-radius: 50%;
 }
-.conteudoMenuAcessoFuncionario{
+.descricaoMenuAcessoFuncionario{
     margin: 1px 0px;
     margin-left: 35px;
     color: #ffffff;
@@ -280,7 +283,13 @@ body{
     width: 10vw;
     margin: 50px auto;
 }
-
+.campoConsultarCadastro{
+    width: 110px;
+    text-align: center;
+    border: #000000 1px solid;
+    padding: 5px;
+    margin-bottom: 5px;
+}
 .botaoConsultarCadastro{
     margin: 10px auto;
     padding: 5px 15px;
@@ -293,6 +302,20 @@ body{
 
 
 /*funcionarioConsultarCadastroCriado*/
+.funcionarioConsultarCadastroCriado{
+    display: none;
+}
+.funcionarioConsultarCadastroCriadoMostrar{
+    width: 50%;
+    margin: auto;
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
+}
+.funcionarioConsultarCadastroCriadoMostrar::-webkit-scrollbar { 
+	display: none;
+}
+
 .tituloFuncionarioConsultarCadastroCriado{
     margin: auto;
 }
@@ -300,16 +323,7 @@ body{
     text-align: center;
     font-size: 40px;
     color: #126dde;
-    /* margin-top: -38.8%;
-    margin-bottom: 38.8%; */
-}
-.funcionarioConsultarCadastroCriado{
-    display: none;
-}
-.funcionarioConsultarCadastroCriadoMostrar{
-    width: 50%;
-    margin: auto;
-    display: inline;
+    margin: 17px 0px;
 }
 
 .divisaoFuncionarioConsultarCadastroCriado{
@@ -317,48 +331,49 @@ body{
     flex-wrap:wrap;
     width: 530px;
     margin: auto;
+    height: 91vh;
 }
 .descricaoFuncionarioConsultarCadastroCriado{
     flex:1 1 auto;
     margin: 5px 3px;
 }
-#descricaoFuncionarioConsultarCadastroCriadoCPF, #descricaoFuncionarioConsultarCadastroCriadoProntuario{
-    width: 250px;
+#descricaoFuncionarioConsultarCadastroCriadoCPF, #descricaoFuncionarioConsultarCadastroCriadoProntuario, #descricaoFuncionarioConsultarCadastroCriadoTipoMedico, #descricaoFuncionarioConsultarCadastroCriadoSalaAtendimento{
+    width: 255px;
 }
-#funcionarioConsultarCadastroCriadoCPF, #funcionarioConsultarCadastroCriadoProntuario{
-    width: 250px;
+#inputFuncionarioConsultarCadastroCriadoCPF, #inputFuncionarioConsultarCadastroCriadoProntuario, #inputFuncionarioConsultarCadastroCriadoTipoMedico, #inputFuncionarioConsultarCadastroCriadoSalaAtendimento{
+    width: 255px;
 }
 
 
 #descricaoFuncionarioConsultarCadastroCriadoNomeCompleto, #descricaoFuncionarioConsultarCadastroCriadoPontoReferencia{
     width: 420px;
 }
-#funcionarioConsultarCadastroCriadoNomeCompleto, #funcionarioConsultarCadastroCriadoPontoReferencia{
+#inputFuncionarioConsultarCadastroCriadoNomeCompleto, #inputFuncionarioConsultarCadastroCriadoPontoReferencia{
     width: 420px;
 }
 
 #descricaoFuncionarioConsultarCadastroCriadoTipoSaguineo, #descricaoFuncionarioConsultarCadastroCriadoNumero, #descricaoFuncionarioConsultarCadastroCriadoUF, #descricaoFuncionarioConsultarCadastroCriadoSexo{
     width: 90px;
 }
-#funcionarioConsultarCadastroCriadoTipoSaguineo, #funcionarioConsultarCadastroCriadoNumero, #funcionarioConsultarCadastroCriadoUF, #funcionarioConsultarCadastroCriadoSexo{
+#inputFuncionarioConsultarCadastroCriadoTipoSaguineo, #inputFuncionarioConsultarCadastroCriadoNumero, #inputFuncionarioConsultarCadastroCriadoUF, #inputFuncionarioConsultarCadastroCriadoSexo{
     width: 90px;
     text-align: center;
 }
 
 
 #descricaoFuncionarioConsultarCadastroCriadoEmail{
-    width: 330px;
+    width: 340px;
 
 }
-#funcionarioConsultarCadastroCriadoEmail{
-    width: 330px;
+#inputFuncionarioConsultarCadastroCriadoEmail{
+    width: 340px;
 }
 
 #descricaoFuncionarioConsultarCadastroCriadoTelefone{
     width: 170px;
 
 }
-#funcionarioConsultarCadastroCriadoTelefone{
+#inputFuncionarioConsultarCadastroCriadoTelefone{
     width: 170px;
     text-align: center;
 }
@@ -367,21 +382,21 @@ body{
 #descricaoFuncionarioConsultarCadastroCriadoCEP, #descricaoFuncionarioConsultarCadastroCriadoEstadoCivil{
     width: 110px;
 }
-#funcionarioConsultarCadastroCriadoCEP, #funcionarioConsultarCadastroCriadoEstadoCivil{
+#inputFuncionarioConsultarCadastroCriadoCEP, #inputFuncionarioConsultarCadastroCriadoEstadoCivil{
     width: 110px;
 }
 
 #descricaoFuncionarioConsultarCadastroCriadoRua, #descricaoFuncionarioConsultarCadastroCriadoLocalNascimento{
     width: 299px;
 }
-#funcionarioConsultarCadastroCriadoRua, #funcionarioConsultarCadastroCriadoLocalNascimento{
+#inputFuncionarioConsultarCadastroCriadoRua, #inputFuncionarioConsultarCadastroCriadoLocalNascimento{
     width: 299px;
 }
 
 #descricaoFuncionarioConsultarCadastroCriadoComplemento, #descricaoFuncionarioConsultarCadastroCriadoCidade, #descricaoFuncionarioConsultarCadastroCriadoMunicipio{
     width: 165px;
 }
-#funcionarioConsultarCadastroCriadoComplemento, #funcionarioConsultarCadastroCriadoCidade, #funcionarioConsultarCadastroCriadoMunicipio{
+#inputFuncionarioConsultarCadastroCriadoComplemento, #inputFuncionarioConsultarCadastroCriadoCidade, #inputFuncionarioConsultarCadastroCriadoMunicipio{
     width: 165px;
 }
 
@@ -390,58 +405,247 @@ body{
     width: 390px;
 
 }
-#funcionarioConsultarCadastroCriadoNomePai, #funcionarioConsultarCadastroCriadoNomeMae{
+#inputFuncionarioConsultarCadastroCriadoNomePai, #inputFuncionarioConsultarCadastroCriadoNomeMae{
     width: 390px;
 }
 #descricaoFuncionarioConsultarCadastroCriadoTelefonePai, #descricaoFuncionarioConsultarCadastroCriadoTelefoneMae{
     width: 120px;
 
 }
-#funcionarioConsultarCadastroCriadoTelefonePai, #funcionarioConsultarCadastroCriadoTelefoneMae{
+#inputFuncionarioConsultarCadastroCriadoTelefonePai, #inputFuncionarioConsultarCadastroCriadoTelefoneMae{
     width: 120px;
     text-align: center;
 }
 
 
+#descricaoFuncionarioConsultarCadastroCriadoSintomas, #descricaoFuncionarioConsultarCadastroCriadoAlergias, #descricaoFuncionarioConsultarCadastroCriadoDoencasCronicas, #descricaoFuncionarioConsultarCadastroCriadoRemediosControlados{
+    width: 520px;
 
-
-.inputFuncionarioConsultarCadastroCriado{
-    padding: 5px;
 }
-/**/
-.nomeTituloFuncionarioCadastrarPaciente{
-    font-size: 40px;
+#inputFuncionarioConsultarCadastroCriadoSintomas, #inputFuncionarioConsultarCadastroCriadoAlergias, #inputFuncionarioConsultarCadastroCriadoDoencasCronicas, #inputFuncionarioConsultarCadastroCriadoRemediosControlados{
+    width: 520px;
     text-align: center;
-    color: #126dde;
-    width: 100%;
+    resize: none;    
+    height: 70px;
+    text-align: left;
 }
+#inputFuncionarioConsultarCadastroCriadoSintomas{
+    height: 150px;
+}
+.inputFuncionarioConsultarCadastroCriado{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/*funcionarioCadastrarPaciente*/
 .funcionarioCadastrarPaciente{
     display: none;
 }
 .funcionarioCadastrarPacienteMostrar{
     width: 50%;
     margin: auto;
-    display: inline;
+    display: block;
+    overflow-y: scroll;
+    height: 100%;
 }
-#divisaoFuncionarioCadastrarPaciente1, #divisaoFuncionarioCadastrarPaciente2{
-    display: grid;
-    grid-template-columns: 50% 50%;
+.funcionarioCadastrarPacienteMostrar::-webkit-scrollbar { 
+	display: none;
 }
-#divisaoFuncionarioCadastrarPaciente3{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+.tituloFuncionarioCadastrarPaciente{
+    margin: auto;
 }
-#funcionarioCadastrarPacienteNomeCompleto{
-    width: 400px;
+.nomeTituloFuncionarioCadastrarPaciente{
+    text-align: center;
+    font-size: 40px;
+    color: #126dde;
+    margin: 17px 0px;
 }
-#funcionarioCadastrarPacienteTipoSaguineo, #funcionarioCadastrarPacienteNumero{
+
+.divisaoFuncionarioCadastrarPaciente{
+    display:flex;
+    flex-wrap:wrap;
+    width: 530px;
+    margin: auto;
+    height: 91vh;
+}
+.descricaoFuncionarioCadastrarPaciente{
+    flex:1 1 auto;
+    margin: 5px 3px;
+}
+#descricaoFuncionarioCadastrarPacienteCPF, #descricaoFuncionarioCadastrarPacienteProntuario, #descricaoFuncionarioCadastrarPacienteTipoMedico, #descricaoFuncionarioCadastrarPacienteSalaAtendimento{
+    width: 255px;
+}
+#inputFuncionarioCadastrarPacienteCPF, #inputFuncionarioCadastrarPacienteProntuario, #inputFuncionarioCadastrarPacienteTipoMedico, #inputFuncionarioCadastrarPacienteSalaAtendimento{
+    width: 255px;
+}
+
+
+#descricaoFuncionarioCadastrarPacienteNomeCompleto, #descricaoFuncionarioCadastrarPacientePontoReferencia{
+    width: 420px;
+}
+#inputFuncionarioCadastrarPacienteNomeCompleto, #inputFuncionarioCadastrarPacientePontoReferencia{
+    width: 420px;
+}
+
+#descricaoFuncionarioCadastrarPacienteTipoSaguineo, #descricaoFuncionarioCadastrarPacienteNumero, #descricaoFuncionarioCadastrarPacienteUF, #descricaoFuncionarioCadastrarPacienteSexo{
     width: 90px;
-} #descricaoFuncionarioCadastrarPacienteCPF{
-    width: 500px;
 }
-#descricaoFuncionarioCadastrarPacienteProntuario{
-    width: 500px;
+#inputFuncionarioCadastrarPacienteTipoSaguineo, #inputFuncionarioCadastrarPacienteNumero, #inputFuncionarioCadastrarPacienteUF, #inputFuncionarioCadastrarPacienteSexo{
+    width: 90px;
+    text-align: center;
 }
+
+
+#descricaoFuncionarioCadastrarPacienteEmail{
+    width: 340px;
+
+}
+#inputFuncionarioCadastrarPacienteEmail{
+    width: 340px;
+}
+
+#descricaoFuncionarioCadastrarPacienteTelefone{
+    width: 170px;
+
+}
+#inputFuncionarioCadastrarPacienteTelefone{
+    width: 170px;
+    text-align: center;
+}
+
+
+#descricaoFuncionarioCadastrarPacienteCEP, #descricaoFuncionarioCadastrarPacienteEstadoCivil{
+    width: 110px;
+}
+#inputFuncionarioCadastrarPacienteCEP, #inputFuncionarioCadastrarPacienteEstadoCivil{
+    width: 110px;
+}
+
+#descricaoFuncionarioCadastrarPacienteRua, #descricaoFuncionarioCadastrarPacienteLocalNascimento{
+    width: 299px;
+}
+#inputFuncionarioCadastrarPacienteRua, #inputFuncionarioCadastrarPacienteLocalNascimento{
+    width: 299px;
+}
+
+#descricaoFuncionarioCadastrarPacienteComplemento, #descricaoFuncionarioCadastrarPacienteCidade, #descricaoFuncionarioCadastrarPacienteMunicipio{
+    width: 165px;
+}
+#inputFuncionarioCadastrarPacienteComplemento, #inputFuncionarioCadastrarPacienteCidade, #inputFuncionarioCadastrarPacienteMunicipio{
+    width: 165px;
+}
+
+
+#descricaoFuncionarioCadastrarPacienteNomePai, #descricaoFuncionarioCadastrarPacienteNomeMae{
+    width: 390px;
+
+}
+#inputFuncionarioCadastrarPacienteNomePai, #inputFuncionarioCadastrarPacienteNomeMae{
+    width: 390px;
+}
+#descricaoFuncionarioCadastrarPacienteTelefonePai, #descricaoFuncionarioCadastrarPacienteTelefoneMae{
+    width: 120px;
+
+}
+#inputFuncionarioCadastrarPacienteTelefonePai, #inputFuncionarioCadastrarPacienteTelefoneMae{
+    width: 120px;
+    text-align: center;
+}
+
+
+#descricaoFuncionarioCadastrarPacienteSintomas, #descricaoFuncionarioCadastrarPacienteAlergias, #descricaoFuncionarioCadastrarPacienteDoencasCronicas, #descricaoFuncionarioCadastrarPacienteRemediosControlados{
+    width: 520px;
+
+}
+#inputFuncionarioCadastrarPacienteSintomas, #inputFuncionarioCadastrarPacienteAlergias, #inputFuncionarioCadastrarPacienteDoencasCronicas, #inputFuncionarioCadastrarPacienteRemediosControlados{
+    width: 520px;
+    text-align: center;
+    resize: none;    
+    height: 70px;
+    text-align: left;
+}
+#inputFuncionarioCadastrarPacienteSintomas{
+    height: 150px;
+}
+.inputFuncionarioCadastrarPaciente{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.botaoCadastrarPaciente{
+    margin: 10px auto;
+    padding: 5px 15px;
+    border: #126dde 1px solid;
+    background-color:#126dde;
+    color: #ffffff;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* acessoPaciente */
@@ -450,10 +654,6 @@ body{
 }
 .acessoPacienteMostrar{
     display: grid;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: rgb(208, 208, 208);
     padding: 10px;
     border-radius: 10px;
