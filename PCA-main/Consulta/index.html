@@ -81,12 +81,15 @@
 
     
     <section class="acessoFuncionario" id="acessoFuncionario">
-        <!-- <div class="menuHaburguerAcessoFuncionario" id="menuHaburguerAcessoFuncionario">
-            <p class="LinkbotaoHaburguer"><span class="material-icons" id="botaoHaburguer" onclick="menuHamburguer()">menu</span></p>
-        </div> -->
+        <div class="menuHamburguerAcessoFuncionario" id="menuHamburguerAcessoFuncionario">
+            <p class="LinkbotaoHamburguer"><span class="material-icons" id="botaoHamburguer" onclick="menuHamburguer()">menu</span></p>
+        </div>
 
         <div class="menuAcessoFuncionario" id="menuAcessoFuncionario">
-            <div class="dadosAcessoFuncionario">
+            <div class="menuFecharAcessoFuncionario" id="menuFecharAcessoFuncionario">
+                <p class="LinkbotaoFechar"><span class="material-icons" id="botaoFechar" onclick="menuFechar()">close</span></p>
+            </div>
+            <div class="dadosAcessoFuncionario" id="dadosAcessoFuncionario">
                 <img src="img/iconeAvatar.png" class="imagemFuncionario">
                 <p class="descricaoMenuAcessoFuncionario" id="descricaoMenuAcessoFuncionarioNome">Nome: 
                     <span class="nomeAcessoFuncionario" id="nomeAcessoFuncionarioNome"></span>
@@ -99,7 +102,7 @@
                 </p>
             </div>
 
-            <div class="dadosMenuAcessoFuncionario">
+            <div class="dadosMenuAcessoFuncionario" id="dadosMenuAcessoFuncionario">
                 <p class="dadoMenuAcessoFuncionario" id="menuConsultarCadastro" onclick="menuConsultarCadastro()" onmouseover="dadoMenuAcessoFuncionarioOver()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuConsultarCadastro">how_to_reg</span> <span class="nomeDadoMenuAcessoFuncionario">Consultar cadastro</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCadastrarPaciente">person_add</span> <span class="nomeDadoMenuAcessoFuncionario">Cadastrar paciente</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCriarFichaAtendimento">create_new_folder</span> <span class="nomeDadoMenuAcessoFuncionario">Criar ficha de atendimento</span></p>
@@ -114,12 +117,12 @@
                     <h1 class="nomeTituloConsultarCadastro">CONSULTAR CADASTRO</h1>
                 </div>            
                 <div class="conteudoConsultarCadastro" id="conteudoConsultarCadastro">
-                    <p class="descricaoConsultarCadastro">
+                    <div class="descricaoConsultarCadastro">
                         <label class="nomeInputconsultarCadastro">CPF</label>
                         <br>
                         <input type="text"class="campoConsultarCadastro" id="campoConsultarCadastroCPF" value="85263149075">
-                    </p>
                     <input type="button" value="CONSULTAR" class="botaoConsultarCadastro" onclick="consultarCadastroCriado()">
+                </div>
                 </div>
             </div>
 

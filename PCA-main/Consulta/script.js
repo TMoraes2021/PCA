@@ -60,10 +60,37 @@ function dadoMenuAcessoFuncionarioOver(){
     dadoMenuAcessoFuncionario.className = "dadoMenuAcessoFuncionarioOver";
 }
 
+function menuHamburguer(){
+    var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+
+    var x = window.screen.width;
+
+    if(x > "800"){
+        menuAcessoFuncionario.className = "menuAcessoFuncionario";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+    }
+    else{
+        menuAcessoFuncionario.className = "menuAcessoFuncionarioAbrir";
+        acessoFuncionario.className = "acessoFuncionarioAbrir";
+    }
+}
+function menuFechar(){
+    var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+    
+    menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
+    acessoFuncionario.className = "acessoFuncionarioFecharMenu";
+}
+
 function menuConsultarCadastro(){
     var consultarCadastro = document.getElementById("consultarCadastro");
+    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
     
     consultarCadastro.className = "consultarCadastro";
+    funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
 }
 function consultarCadastroCriado(){
     var campoConsultarCadastroCPF = document.getElementById("campoConsultarCadastroCPF").value;

@@ -206,12 +206,38 @@ body{
     margin: 0px auto;
     grid-template-columns: 220px auto;
 }
+.acessoFuncionarioFecharMenu{
+    display: grid;
+    grid-template-columns: 100%;
+}
 .menuAcessoFuncionario{
+    display: block;
     position: relative;
     left: 0;
     background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
     min-height: 100vh;
     max-height: 100%;
+    padding-top: 25px;
+}
+.menuAcessoFuncionarioOcultar{
+    display: none;
+}
+.menuAcessoFuncionarioFecharMenu{
+    display: none;
+}
+.menuHamburguerAcessoFuncionario,.menuFecharAcessoFuncionario{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #126dde;
+    border-radius: 0% 0% 50%;
+    border-right: #ffffff solid 1px;
+    border-bottom: #ffffff solid 1px;
+    cursor: pointer;
+}
+#botaoHamburguer,#botaoFechar{
+    color: #ffffff;
+    padding: 10px;
 }
 .dadosAcessoFuncionario{
     display: grid;
@@ -270,21 +296,29 @@ body{
 
 /* consultarCadastro */
 .consultarCadastro{
-    display: inline;
+    width: 100%;
     margin: auto;
+    display: block;
+    overflow: scroll;
+    height: 100%;
+    padding-top: 30px;
 }
+.consultarCadastro::-webkit-scrollbar { 
+	display: none;
+}
+
 .consultarCadastroOcultar{
     display: none;
 }
 
 .nomeTituloConsultarCadastro{
+    text-align: center;
     font-size: 40px;
     color: #126dde;
-    margin-top: -95%;
-    margin-bottom: 95%;
+    margin: 17px 0px;
 }
 .conteudoConsultarCadastro{
-    width: 10vw;
+    width: 100px;
     margin: 50px auto;
 }
 .campoConsultarCadastro{
@@ -310,10 +344,10 @@ body{
     display: none;
 }
 .funcionarioConsultarCadastroCriadoMostrar{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: block;
-    overflow-y: scroll;
+    overflow: scroll;
     height: 100%;
 }
 .funcionarioConsultarCadastroCriadoMostrar::-webkit-scrollbar { 
@@ -446,10 +480,10 @@ body{
     display: none;
 }
 .funcionarioCadastrarPacienteMostrar{
-    width: 50%;
+    width: 100%;
     margin: auto;
     display: block;
-    overflow-y: scroll;
+    overflow: scroll;
     height: 100%;
 }
 .funcionarioCadastrarPacienteMostrar::-webkit-scrollbar { 
@@ -585,6 +619,34 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .menuAcessoFuncionario{
+        display: none;
+    }
+    .menuAcessoFuncionarioAbrir{
+        display: block;
+        position: relative;
+        left: 0;
+        background: linear-gradient(180deg, #0B78A7 70%, #23E5FF);
+        min-height: 100vh;
+        max-height: 100%;
+        padding-top: 25px;
+    }
+    .acessoFuncionarioMostrar{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .acessoFuncionarioAbrir{
+        display: grid;
+        width: 100%;
+        margin: 0px auto;
+        grid-template-columns: 220px auto;
+    }
 }
 
 
