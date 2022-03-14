@@ -80,14 +80,29 @@ body{
 .nomeInputDivisaoAutenticacaoDireita{
     text-align: left;
 }
-
+.campoSenha{
+    display: flex;
+    border: #000000 1px solid;
+}
 .campoAutenticacao{
     width: 100%;
     min-width: 60px;
     text-align: center;
-    border: #000000 1px solid;
     padding: 5px;
+    border: #000000 1px solid;
     margin-bottom: 5px;
+}
+#campoAutenticacaoSenha{    
+    border: #00000000 1px solid;
+    margin-bottom: 0px;
+    margin-right: -15px;
+}
+#botaoMostrarSenha{
+    text-align: right;
+    font-size: 17px;
+    margin: auto 2px;
+    margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .botaoAutenticar{

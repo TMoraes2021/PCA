@@ -1,3 +1,24 @@
+function mostrarSenha(){
+    var str = document.getElementById("botaoMostrarSenha").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+    
+    var campoAutenticacaoSenha = document.getElementById("campoAutenticacaoSenha");
+    
+    /* botaoMostrarSenha.innerHTML = "visibility_off"; */
+
+
+    if(res == "visibility"){
+        botaoMostrarSenha.innerHTML = "visibility_off";
+        campoAutenticacaoSenha.setAttribute('type', 'text');
+    }
+    else{
+        botaoMostrarSenha.innerHTML = "visibility";
+        campoAutenticacaoSenha.setAttribute('type', 'password');
+    }
+
+}
+
 function Autenticacao(){
     var campoAutenticacaoUsuario = document.getElementById("campoAutenticacaoUsuario").value;
     var campoAutenticacaoSenha = document.getElementById("campoAutenticacaoSenha").value;

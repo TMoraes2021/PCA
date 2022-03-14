@@ -31,15 +31,18 @@
                     <h1 class="nomeTituloDivisaoAutenticacaoDireita">Login</h1>
                 </div>
                 <div class="conteudoDivisaoAutenticacaoDireita">
-                    <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoUsuario">
-                        <label class="nomeInputDivisaoAutenticacaoDireita">Usuário</label>
+                    <p class="descricaoDivisaoAutenticacao">
+                        <label class="nomeInputDivisaoAutenticacaoDireita" for="campoAutenticacaoUsuario">Usuário</label>
                         <br>
                         <input type="text" class="campoAutenticacao" id="campoAutenticacaoUsuario" name="campoAutenticacaoUsuario" value="589045">
                     </p>    
-                    <p class="descricaoDivisaoAutenticacao" for="campoAutenticacaoSenha">
-                        <label class="nomeInputDivisaoAutenticacaoDireita">Senha</label>
+                    <p class="descricaoDivisaoAutenticacao">
+                        <label class="nomeInputDivisaoAutenticacaoDireita" for="campoAutenticacaoSenha">Senha</label>
                         <br>
-                        <input type="text" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="589045">
+                        <p class="campoSenha">
+                            <input type="password" class="campoAutenticacao" id="campoAutenticacaoSenha" name="campoAutenticacaoSenha" value="589045" >
+                            <span class="material-icons botaoMostrarSenha" id="botaoMostrarSenha" onclick="mostrarSenha()">visibility</span>
+                        </p>
                     </p>
                     <input type="button" value="ENTRAR" class="botaoAutenticar" onclick="Autenticacao()">
                 </div>
