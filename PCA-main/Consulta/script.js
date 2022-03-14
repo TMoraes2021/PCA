@@ -237,6 +237,7 @@ function consultarCadastroCriado(){
         inputFuncionarioConsultarCadastroCriadoRemediosControlados.value = "";
     }
 }
+
 function menuCadastrarPaciente(){
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
@@ -260,9 +261,108 @@ function menuCadastrarPaciente(){
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
     }
 }
+function cadastrarPacienteCriado(){
+    var funcionarioCadastrarPacienteCPF = document.getElementById("funcionarioCadastrarPacienteCPF");
+    var funcionarioCadastrarPacienteProntuario = document.getElementById("funcionarioCadastrarPacienteProntuario");
+    var funcionarioCadastrarPacienteNomeCompleto = document.getElementById("funcionarioCadastrarPacienteNomeCompleto");
+    var funcionarioCadastrarPacienteTipoSaguineo = document.getElementById("funcionarioCadastrarPacienteTipoSaguineo");
+    var funcionarioCadastrarPacienteEmail = document.getElementById("funcionarioCadastrarPacienteEmail");
+    var funcionarioCadastrarPacienteTelefone = document.getElementById("funcionarioCadastrarPacienteTelefone");
+    var funcionarioCadastrarPacienteCEP = document.getElementById("funcionarioCadastrarPacienteCEP");
+    var funcionarioCadastrarPacienteRua = document.getElementById("funcionarioCadastrarPacienteRua");
+    var funcionarioCadastrarPacienteNumero = document.getElementById("funcionarioCadastrarPacienteNumero");
+    var funcionarioCadastrarPacienteComplemento = document.getElementById("funcionarioCadastrarPacienteComplemento");
+    var funcionarioCadastrarPacienteCidade = document.getElementById("funcionarioCadastrarPacienteCidade");
+    var funcionarioCadastrarPacienteMunicipio = document.getElementById("funcionarioCadastrarPacienteMunicipio");
+    var funcionarioCadastrarPacientePontoReferencia = document.getElementById("funcionarioCadastrarPacientePontoReferencia");
+    var funcionarioCadastrarPacienteUF = document.getElementById("funcionarioCadastrarPacienteUF");
+    var funcionarioCadastrarPacienteLocalNascimento = document.getElementById("funcionarioCadastrarPacienteLocalNascimento");
+    var funcionarioCadastrarPacienteEstadoCivil = document.getElementById("funcionarioCadastrarPacienteEstadoCivil");
+    var funcionarioCadastrarPacienteSexo = document.getElementById("funcionarioCadastrarPacienteSexo");
+    var funcionarioCadastrarPacienteNomePai = document.getElementById("funcionarioCadastrarPacienteNomePai");
+    var funcionarioCadastrarPacienteTelefonePai = document.getElementById("funcionarioCadastrarPacienteTelefonePai");
+    var funcionarioCadastrarPacienteNomeMae = document.getElementById("funcionarioCadastrarPacienteNomeMae");
+    var funcionarioCadastrarPacienteTelefoneMae = document.getElementById("funcionarioCadastrarPacienteTelefoneMae");
+    var funcionarioCadastrarPacienteTipoMedico = document.getElementById("funcionarioCadastrarPacienteTipoMedico");
+    var funcionarioCadastrarPacienteSalaAtendimento = document.getElementById("funcionarioCadastrarPacienteSalaAtendimento");
+    var funcionarioCadastrarPacienteSintomas = document.getElementById("funcionarioCadastrarPacienteSintomas");
+    var funcionarioCadastrarPacienteAlergias = document.getElementById("funcionarioCadastrarPacienteAlergias");
+    var funcionarioCadastrarPacienteDoencasCronicas = document.getElementById("funcionarioCadastrarPacienteDoencasCronicas");
+    var funcionarioCadastrarPacienteRemediosControlados = document.getElementById("funcionarioCadastrarPacienteRemediosControlados");
 
+    var inputFuncionarioCadastrarPacienteCPF = document.getElementById("inputFuncionarioCadastrarPacienteCPF");
+    var inputFuncionarioCadastrarPacienteProntuario = document.getElementById("inputFuncionarioCadastrarPacienteProntuario");
+    var inputFuncionarioCadastrarPacienteNomeCompleto = document.getElementById("inputFuncionarioCadastrarPacienteNomeCompleto");
+    var inputFuncionarioCadastrarPacienteTipoSaguineo = document.getElementById("inputFuncionarioCadastrarPacienteTipoSaguineo");
+    var inputFuncionarioCadastrarPacienteEmail = document.getElementById("inputFuncionarioCadastrarPacienteEmail");
+    var inputFuncionarioCadastrarPacienteTelefone = document.getElementById("inputFuncionarioCadastrarPacienteTelefone");
+    var inputFuncionarioCadastrarPacienteCEP = document.getElementById("inputFuncionarioCadastrarPacienteCEP");
+    var inputFuncionarioCadastrarPacienteRua = document.getElementById("inputFuncionarioCadastrarPacienteRua");
+    var inputFuncionarioCadastrarPacienteNumero = document.getElementById("inputFuncionarioCadastrarPacienteNumero");
+    var inputFuncionarioCadastrarPacienteComplemento = document.getElementById("inputFuncionarioCadastrarPacienteComplemento");
+    var inputFuncionarioCadastrarPacienteCidade = document.getElementById("inputFuncionarioCadastrarPacienteCidade");
+    var inputFuncionarioCadastrarPacienteMunicipio = document.getElementById("inputFuncionarioCadastrarPacienteMunicipio");
+    var inputFuncionarioCadastrarPacientePontoReferencia = document.getElementById("inputFuncionarioCadastrarPacientePontoReferencia");
+    var inputFuncionarioCadastrarPacienteUF = document.getElementById("inputFuncionarioCadastrarPacienteUF");
+    var inputFuncionarioCadastrarPacienteLocalNascimento = document.getElementById("inputFuncionarioCadastrarPacienteLocalNascimento");
+    var inputFuncionarioCadastrarPacienteEstadoCivil = document.getElementById("inputFuncionarioCadastrarPacienteEstadoCivil");
+    var inputFuncionarioCadastrarPacienteSexo = document.getElementById("inputFuncionarioCadastrarPacienteSexo");
+    var inputFuncionarioCadastrarPacienteNomePai = document.getElementById("inputFuncionarioCadastrarPacienteNomePai");
+    var inputFuncionarioCadastrarPacienteTelefonePai = document.getElementById("inputFuncionarioCadastrarPacienteTelefonePai");
+    var inputFuncionarioCadastrarPacienteNomeMae = document.getElementById("inputFuncionarioCadastrarPacienteNomeMae");
+    var inputFuncionarioCadastrarPacienteTelefoneMae = document.getElementById("inputFuncionarioCadastrarPacienteTelefoneMae");
+    var inputFuncionarioCadastrarPacienteTipoMedico = document.getElementById("inputFuncionarioCadastrarPacienteTipoMedico");
+    var inputFuncionarioCadastrarPacienteSalaAtendimento = document.getElementById("inputFuncionarioCadastrarPacienteSalaAtendimento");
+    var inputFuncionarioCadastrarPacienteSintomas = document.getElementById("inputFuncionarioCadastrarPacienteSintomas");
+    var inputFuncionarioCadastrarPacienteAlergias = document.getElementById("inputFuncionarioCadastrarPacienteAlergias");
+    var inputFuncionarioCadastrarPacienteDoencasCronicas = document.getElementById("inputFuncionarioCadastrarPacienteDoencasCronicas");
+    var inputFuncionarioCadastrarPacienteRemediosControlados = document.getElementById("inputFuncionarioCadastrarPacienteRemediosControlados");
 
+    if(inputFuncionarioCadastrarPacienteCPF.value == ""){
+        alert('Verificar dados do paciente!');
+    }    
+    else{
+        let listaUser = JSON.parse(localStorage.getItem('ListaUser') || '[]');
 
+        listaUser.push(
+            {
+                inputFuncionarioCadastrarPacienteCPF: inputFuncionarioCadastrarPacienteCPF.value, 
+                inputFuncionarioCadastrarPacienteProntuario: inputFuncionarioCadastrarPacienteProntuario.value, 
+                inputFuncionarioCadastrarPacienteNomeCompleto: inputFuncionarioCadastrarPacienteNomeCompleto.value, 
+                inputFuncionarioCadastrarPacienteTipoSaguineo: inputFuncionarioCadastrarPacienteTipoSaguineo.value, 
+                inputFuncionarioCadastrarPacienteEmail: inputFuncionarioCadastrarPacienteEmail.value, 
+                inputFuncionarioCadastrarPacienteTelefone: inputFuncionarioCadastrarPacienteTelefone.value, 
+                inputFuncionarioCadastrarPacienteCEP: inputFuncionarioCadastrarPacienteCEP.value, 
+                inputFuncionarioCadastrarPacienteRua: inputFuncionarioCadastrarPacienteRua.value, 
+                inputFuncionarioCadastrarPacienteNumero: inputFuncionarioCadastrarPacienteNumero.value, 
+                inputFuncionarioCadastrarPacienteComplemento: inputFuncionarioCadastrarPacienteComplemento.value, 
+                inputFuncionarioCadastrarPacienteCidade: inputFuncionarioCadastrarPacienteCidade.value, 
+                inputFuncionarioCadastrarPacienteMunicipio: inputFuncionarioCadastrarPacienteMunicipio.value, 
+                inputFuncionarioCadastrarPacientePontoReferencia: inputFuncionarioCadastrarPacientePontoReferencia.value, 
+                inputFuncionarioCadastrarPacienteUF: inputFuncionarioCadastrarPacienteUF.value, 
+                inputFuncionarioCadastrarPacienteLocalNascimento: inputFuncionarioCadastrarPacienteLocalNascimento.value, 
+                inputFuncionarioCadastrarPacienteEstadoCivil: inputFuncionarioCadastrarPacienteEstadoCivil.value, 
+                inputFuncionarioCadastrarPacienteSexo: inputFuncionarioCadastrarPacienteSexo.value, 
+                inputFuncionarioCadastrarPacienteNomePai: inputFuncionarioCadastrarPacienteNomePai.value, 
+                inputFuncionarioCadastrarPacienteTelefonePai: inputFuncionarioCadastrarPacienteTelefonePai.value, 
+                inputFuncionarioCadastrarPacienteNomeMae: inputFuncionarioCadastrarPacienteNomeMae.value, 
+                inputFuncionarioCadastrarPacienteTelefoneMae: inputFuncionarioCadastrarPacienteTelefoneMae.value, 
+                inputFuncionarioCadastrarPacienteTipoMedico: inputFuncionarioCadastrarPacienteTipoMedico.value, 
+                inputFuncionarioCadastrarPacienteSalaAtendimento: inputFuncionarioCadastrarPacienteSalaAtendimento.value, 
+                inputFuncionarioCadastrarPacienteSintomas: inputFuncionarioCadastrarPacienteSintomas.value, 
+                inputFuncionarioCadastrarPacienteAlergias: inputFuncionarioCadastrarPacienteAlergias.value, 
+                inputFuncionarioCadastrarPacienteDoencasCronicas: inputFuncionarioCadastrarPacienteDoencasCronicas.value, 
+                inputFuncionarioCadastrarPacienteRemediosControlados: inputFuncionarioCadastrarPacienteRemediosControlados.value, 
+
+            }
+        )
+
+        localStorage.setItem('listaUser', JSON.stringify(listaUser));
+
+        
+        alert('Paciente Cadastrado com sucesso!');
+    }
+}
 
 
 
