@@ -330,7 +330,7 @@ body{
     text-align: center;
     font-size: 40px;
     color: #126dde;
-    margin: 17px 0px;
+    margin-top: -30px;
 }
 .conteudoConsultarCadastro{
     width: 100px;
@@ -376,7 +376,7 @@ body{
     text-align: center;
     font-size: 40px;
     color: #126dde;
-    margin: 17px 0px;
+    margin-bottom: 20px;
 }
 
 .divisaoFuncionarioConsultarCadastroCriado{
@@ -512,7 +512,6 @@ body{
     text-align: center;
     font-size: 40px;
     color: #126dde;
-    margin: 17px 0px;
 }
 
 .divisaoFuncionarioCadastrarPaciente{
@@ -651,6 +650,9 @@ body{
         min-height: 100vh;
         max-height: 100%;
         padding-top: 25px;
+    }
+    .menuAcessoFuncionarioFechar{
+        display: none;
     }
     .acessoFuncionarioMostrar{
         display: grid;

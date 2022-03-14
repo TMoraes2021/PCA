@@ -86,14 +86,13 @@ function menuHamburguer(){
     var acessoFuncionario = document.getElementById("acessoFuncionario");
 
     var x = window.screen.width;
-
-    if(x > "800"){
-        menuAcessoFuncionario.className = "menuAcessoFuncionario";
-        acessoFuncionario.className = "acessoFuncionarioMostrar";
-    }
-    else{
+    if(x <= "750"){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioAbrir";
         acessoFuncionario.className = "acessoFuncionarioAbrir";
+    }
+    else{
+        menuAcessoFuncionario.className = "menuAcessoFuncionario";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
     }
 }
 function menuFechar(){
@@ -105,13 +104,36 @@ function menuFechar(){
 }
 
 function menuConsultarCadastro(){
-    var consultarCadastro = document.getElementById("consultarCadastro");
+    /* var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
     
     consultarCadastro.className = "consultarCadastro";
     funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
-    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
+    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente"; */
+
+    
+    var consultarCadastro = document.getElementById("consultarCadastro");
+    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
+
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+    var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
+
+    var x = window.screen.width;
+    if(x <= "750"){
+        consultarCadastro.className = "consultarCadastro";
+        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
+    
+        menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
+        acessoFuncionario.className = "acessoFuncionarioFecharMenu";
+    }
+    else{
+        consultarCadastro.className = "consultarCadastro";
+        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
+    }
 }
 function consultarCadastroCriado(){
     var campoConsultarCadastroCPF = document.getElementById("campoConsultarCadastroCPF").value;
@@ -219,10 +241,24 @@ function menuCadastrarPaciente(){
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
+
+    var acessoFuncionario = document.getElementById("acessoFuncionario");
+    var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
+
+    var x = window.screen.width;
+    if(x <= "750"){
+        consultarCadastro.className = "consultarCadastroOcultar";
+        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
     
-    consultarCadastro.className = "consultarCadastroOcultar";
-    funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
-    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
+        menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
+        acessoFuncionario.className = "acessoFuncionarioFecharMenu";
+    }
+    else{
+        consultarCadastro.className = "consultarCadastroOcultar";
+        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
+    }
 }
 
 
