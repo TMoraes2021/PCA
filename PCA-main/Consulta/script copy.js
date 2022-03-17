@@ -84,83 +84,58 @@ function dadoMenuAcessoFuncionarioOver(){
 function menuHamburguer(){
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var acessoFuncionario = document.getElementById("acessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
 
     var x = window.screen.width;
     if(x <= "750"){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioAbrir";
         acessoFuncionario.className = "acessoFuncionarioAbrir";
-        topoAcessoFuncionario.className = "topoAcessoFuncionarioAbrir";
     }
     else{
         menuAcessoFuncionario.className = "menuAcessoFuncionario";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
-        topoAcessoFuncionario.className = "topoAcessoFuncionario"
     }
 }
 function menuFechar(){
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var acessoFuncionario = document.getElementById("acessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
     
     menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
     acessoFuncionario.className = "acessoFuncionarioFecharMenu";
-    
-    
-    var x = window.screen.width;
-    if(x <= "750"){
-        topoAcessoFuncionario.className = "topoAcessoFuncionario";
-    }
-    else{
-        topoAcessoFuncionario.className = "topoAcessoFuncionarioFechar";
-    }
 }
 
-function menuConsultarCadastro(){    
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-
-    title.innerHTML = "TBMGN | Consultar Cadastro";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Consultar Cadastro";
+function menuConsultarCadastro(){
+    /* var consultarCadastro = document.getElementById("consultarCadastro");
+    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
     
+    consultarCadastro.className = "consultarCadastro";
+    funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
+    funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente"; */
 
+    
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
-    var  consultarHistorico = document.getElementById("consultarHistorico");
-    var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
 
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario")
 
     var x = window.screen.width;
     if(x <= "750"){
         consultarCadastro.className = "consultarCadastro";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        consultarHistorico.className = "consultarHistorico";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
         acessoFuncionario.className = "acessoFuncionarioFecharMenu";
-        topoAcessoFuncionario.className = "topoAcessoFuncionario";
     }
     else{
         consultarCadastro.className = "consultarCadastro";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        consultarHistorico.className = "consultarHistorico";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     }
 }
 function consultarCadastroCriado(){
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-
-    title.innerHTML = "TBMGN | Consultar Cadastro";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "CONSULTAR CADASTRO";
-
     var campoConsultarCadastroCPF = document.getElementById("campoConsultarCadastroCPF").value;
     
     var consultarCadastro = document.getElementById("consultarCadastro");
@@ -337,43 +312,31 @@ function consultarCadastroCriado1(){
         alert('erro!')
     }
 }
+function consultarCadastroCriado2(){
+    
+}
 
 function menuCadastrarPaciente(){
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-    
-    title.innerHTML = "TBMGN | Cadastrar Paciente";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Cadastrar Paciente";
-
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
-    var  consultarHistorico = document.getElementById("consultarHistorico");
-    var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
-
 
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
 
     var x = window.screen.width;
     if(x <= "750"){
         consultarCadastro.className = "consultarCadastroOcultar";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
-        consultarHistorico.className = "consultarHistorico";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
         acessoFuncionario.className = "acessoFuncionarioFecharMenu";
-        topoAcessoFuncionario.className = "topoAcessoFuncionario";
     }
     else{
         consultarCadastro.className = "consultarCadastroOcultar";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
-        consultarHistorico.className = "consultarHistorico";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     }
 }
 function cadastrarPacienteCriado1(){
@@ -450,152 +413,6 @@ function cadastrarPacienteCriado1(){
 
         
         alert('Paciente Cadastrado com sucesso!');
-    }
-}
-
-function menuConsultarHistorico(){    
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-
-    title.innerHTML = "TBMGN | Consultar Historico";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Consultar Historico";
-
-    var consultarCadastro = document.getElementById("consultarCadastro");
-    var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
-    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
-    var  consultarHistorico = document.getElementById("consultarHistorico");
-    var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
-
-    var acessoFuncionario = document.getElementById("acessoFuncionario");
-    var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
-
-    var x = window.screen.width;
-    if(x <= "750"){
-        consultarCadastro.className = "consultarCadastroOcultar";
-        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        consultarHistorico.className = "consultarHistoricoMostrar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
-    
-        menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
-        acessoFuncionario.className = "acessoFuncionarioFecharMenu";
-        topoAcessoFuncionario.className = "topoAcessoFuncionario";
-    }
-    else{
-        consultarCadastro.className = "consultarCadastroOcultar";
-        funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        consultarHistorico.className = "consultarHistoricoMostrar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
-    }
-}
-function consultarHistorico(){
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-
-    title.innerHTML = "TBMGN | Consultar Historico";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Consulta Completa";
-    
-    var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
-    
-    var consultarHistorico = document.getElementById("consultarHistorico");
-    var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
-    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
-
-    var inputFuncionarioConsultarHistoricoDetalhesCPF = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCPF");
-    var inputFuncionarioConsultarHistoricoDetalhesProntuario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesProntuario");
-    var inputFuncionarioConsultarHistoricoDetalhesNomeCompleto = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeCompleto");
-    var inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo");
-    var inputFuncionarioConsultarHistoricoDetalhesEmail = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesEmail");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefone = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefone");
-    var inputFuncionarioConsultarHistoricoDetalhesCEP = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCEP");
-    var inputFuncionarioConsultarHistoricoDetalhesRua = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRua");
-    var inputFuncionarioConsultarHistoricoDetalhesNumero = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNumero");
-    var inputFuncionarioConsultarHistoricoDetalhesComplemento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesComplemento");
-    var inputFuncionarioConsultarHistoricoDetalhesCidade = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCidade");
-    var inputFuncionarioConsultarHistoricoDetalhesMunicipio = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesMunicipio");
-    var inputFuncionarioConsultarHistoricoDetalhesPontoReferencia = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesPontoReferencia");
-    var inputFuncionarioConsultarHistoricoDetalhesUF = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesUF");
-    var inputFuncionarioConsultarHistoricoDetalhesLocalNascimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesLocalNascimento");
-    var inputFuncionarioConsultarHistoricoDetalhesEstadoCivil = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesEstadoCivil");
-    var inputFuncionarioConsultarHistoricoDetalhesSexo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSexo");
-    var inputFuncionarioConsultarHistoricoDetalhesNomePai = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomePai");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefonePai = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefonePai");
-    var inputFuncionarioConsultarHistoricoDetalhesNomeMae = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeMae");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefoneMae = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefoneMae");
-    var inputFuncionarioConsultarHistoricoDetalhesTipoMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoMedico");
-    var inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento");
-    var inputFuncionarioConsultarHistoricoDetalhesSintomas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSintomas");
-    var inputFuncionarioConsultarHistoricoDetalhesAlergias = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesAlergias");
-    var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas");
-    var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados");
-
-    if(campoConsultarHistoricoCPF == "85263149075"){    
-        consultarHistorico.className = "consultarHistoricoOcultar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        
-        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "852.631.490-75";
-        inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "26.7908";
-        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "JOAQUIM OLIVEIRA MONOEL QUEIROZ DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O+";
-        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "joaquimroz@unigranrio.br";
-        inputFuncionarioConsultarHistoricoDetalhesTelefone.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesCEP.value = "89.456-481";
-        inputFuncionarioConsultarHistoricoDetalhesRua.value = "ESTRADA DA LIGAÇÃO";
-        inputFuncionarioConsultarHistoricoDetalhesNumero.value = "500";
-        inputFuncionarioConsultarHistoricoDetalhesComplemento.value = "LOTE:49 QUADRA:52";
-        inputFuncionarioConsultarHistoricoDetalhesCidade.value = "BELFORD-ROXO";
-        inputFuncionarioConsultarHistoricoDetalhesMunicipio.value = "RIO DE JANEIRO";
-        inputFuncionarioConsultarHistoricoDetalhesPontoReferencia.value = "CIEP366";
-        inputFuncionarioConsultarHistoricoDetalhesUF.value = "RJ";
-        inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
-        inputFuncionarioConsultarHistoricoDetalhesEstadoCivil.value = "CASADO";
-        inputFuncionarioConsultarHistoricoDetalhesSexo.value = "M";
-        inputFuncionarioConsultarHistoricoDetalhesNomePai.value = "JÓSE ALBERTO DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefonePai.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesNomeMae.value = "JOANA OLIVEIRA MONOEL QUEIROZ DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefoneMae.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "ORTOPEDIA";
-        inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "A";
-        inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "DORES NOS PÉS";
-        inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "DIABETE";
-        inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
-    }
-    else if(campoConsultarHistoricoCPF == "01234567890"){    
-        consultarHistorico.className = "consultarHistoricoOcultar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        
-        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "012.345.678-90";
-        inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "26.7909";
-        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "BARBARA COSTA DE OLIVEIRA";
-        inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O-";
-        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "barbinha123@unigranrio.br";
-        inputFuncionarioConsultarHistoricoDetalhesTelefone.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesCEP.value = "89.456-481";
-        inputFuncionarioConsultarHistoricoDetalhesRua.value = "ESTRADA DA LIGAÇÃO";
-        inputFuncionarioConsultarHistoricoDetalhesNumero.value = "500";
-        inputFuncionarioConsultarHistoricoDetalhesComplemento.value = "LOTE:49 QUADRA:52";
-        inputFuncionarioConsultarHistoricoDetalhesCidade.value = "DUQUE DE CAXIAS";
-        inputFuncionarioConsultarHistoricoDetalhesMunicipio.value = "RIO DE JANEIRO";
-        inputFuncionarioConsultarHistoricoDetalhesPontoReferencia.value = "UNIGRANRIO";
-        inputFuncionarioConsultarHistoricoDetalhesUF.value = "RJ";
-        inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
-        inputFuncionarioConsultarHistoricoDetalhesEstadoCivil.value = "CASADO";
-        inputFuncionarioConsultarHistoricoDetalhesSexo.value = "F";
-        inputFuncionarioConsultarHistoricoDetalhesNomePai.value = "WALDIR DE OLIVEIRA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefonePai.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesNomeMae.value = "MAIRA COSTA DE OLIVEIRA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefoneMae.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "ORTOPEDIA";
-        inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "A";
-        inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "DORES ABDOMINAIS";
-        inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "";
     }
 }
 
