@@ -463,7 +463,9 @@ function menuConsultarHistorico(){
     var consultarCadastro = document.getElementById("consultarCadastro");
     var funcionarioConsultarCadastroCriado = document.getElementById("funcionarioConsultarCadastroCriado");
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
-    var  consultarHistorico = document.getElementById("consultarHistorico");
+    var consultarHistorico = document.getElementById("consultarHistorico");
+    var conteudoConsultarHistorico = document.getElementById("conteudoConsultarHistorico");
+    var conteudoConsultarHistoricoDetalhes = document.getElementById("conteudoConsultarHistoricoDetalhes");
     var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
 
     var acessoFuncionario = document.getElementById("acessoFuncionario");
@@ -476,6 +478,8 @@ function menuConsultarHistorico(){
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         consultarHistorico.className = "consultarHistoricoMostrar";
+        conteudoConsultarHistorico.className = "conteudoConsultarHistorico";
+        conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhes";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
@@ -487,6 +491,8 @@ function menuConsultarHistorico(){
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         consultarHistorico.className = "consultarHistoricoMostrar";
+        conteudoConsultarHistorico.className = "conteudoConsultarHistorico";
+        conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhes";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     }
 }
@@ -497,7 +503,14 @@ function consultarHistorico(){
     title.innerHTML = "TBMGN | Histórico do Paciente";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Histórico do Paciente";
     
-    var title = document.getElementById("title");
+    var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
+    var conteudoConsultarHistoricoDetalhes = document.getElementById("conteudoConsultarHistoricoDetalhes");
+    var conteudoConsultarHistorico = document.getElementById("conteudoConsultarHistorico");
+
+    if(campoConsultarHistoricoCPF == "85263149075"){
+        conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhesMostrar";
+        conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar";
+    }
 
 }
 function consultarHistoricoDetalhes(){

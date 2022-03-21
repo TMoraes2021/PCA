@@ -689,6 +689,10 @@ body{
 .conteudoConsultarHistorico{
     width: 100px;
     margin: 50px auto;
+    display: block;
+}
+.conteudoConsultarHistoricoOcultar{
+    display: none;
 }
 .campoConsultarHistorico{
     width: 110px;
@@ -850,6 +854,37 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+}
+
+
+/*ConteudoConsultarHistoricoDetalhes*/
+.conteudoConsultarHistoricoDetalhes{
+    display: none;
+}
+.conteudoConsultarHistoricoDetalhesMostrar{
+    border: #000000 1px solid;
+    height: 200px;
+    display: flex;
+    margin: 30px 10px;
+    padding: 10px;
+}
+.historicoDetalhes{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.imagemHistoricoDetalhes{
+    width: 90px;
+    height: 90px;
+    margin: 15px auto;
+    border-radius: 50%;
+}
+
+.historicoDetalhesDireita .descricaoHistoricoDetalhes:last-child{
+    text-align: right;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
 }
 
 
