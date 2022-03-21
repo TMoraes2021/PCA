@@ -453,6 +453,7 @@ function cadastrarPacienteCriado1(){
     }
 }
 
+
 function menuConsultarHistorico(){    
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
@@ -474,8 +475,8 @@ function menuConsultarHistorico(){
     if(x <= "750"){
         consultarCadastro.className = "consultarCadastroOcultar";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriado";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        consultarHistorico.className = "consultarHistoricoMostrar";
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPacienteMostrar";
+        consultarHistorico.className = "consultarHistorico";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhes";
     
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
@@ -494,18 +495,8 @@ function consultarHistorico(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Histórico do Paciente";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Histórico do Paciente";
-    
-    var title = document.getElementById("title");
-
-}
-function consultarHistoricoDetalhes(){
-    var title = document.getElementById("title");
-    var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
-
-    title.innerHTML = "TBMGN | Consulta Completa";
-    nomeTituloTopoAcessoFuncionario.innerHTML = "Consulta Completa";
+    title.innerHTML = "TBMGN | Consultar Historico";
+    nomeTituloTopoAcessoFuncionario.innerHTML = "Consultar Historico";
     
     var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
     
@@ -574,7 +565,7 @@ function consultarHistoricoDetalhes(){
         inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "DIABETE";
         inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
     }
-    else if(campoConsultarHistoricoCPF == "01234567890"){
+    else if(campoConsultarHistoricoCPF == "01234567890"){    
         consultarHistorico.className = "consultarHistoricoOcultar";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
