@@ -1,4 +1,3 @@
-
 *{
     padding: 0px;
     margin: 0px;
@@ -862,15 +861,16 @@ body{
     display: none;
 }
 .conteudoConsultarHistoricoDetalhesMostrar{
-    border: #000000 1px solid;
     height: 200px;
-    display: flex;
+    display: grid;
     margin: 30px 10px;
     padding: 10px;
 }
 .historicoDetalhes{
+    border: #939393 1px solid;
     display: grid;
     grid-template-columns: 200px auto;
+    margin: 20px;
 }
 
 .imagemHistoricoDetalhes{
@@ -882,9 +882,10 @@ body{
 
 .historicoDetalhesDireita .descricaoHistoricoDetalhes:last-child{
     text-align: right;
-    position: absolute;
+    position: relative;
     right: 0;
-    margin-right: 20px;
+    bottom: 0;
+    padding: 5px;
 }
 
 

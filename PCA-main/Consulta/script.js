@@ -228,16 +228,16 @@ function consultarCadastroCriado(){
         inputFuncionarioConsultarCadastroCriadoDoencasCronicas.value = "DIABETE";
         inputFuncionarioConsultarCadastroCriadoRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
     }
-    else if(campoConsultarCadastroCPF == "01234567890"){    
+    else if(campoConsultarCadastroCPF == "12345678900"){    
         consultarCadastro.className = "consultarCadastroOcultar";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriadoMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         
-        inputFuncionarioConsultarCadastroCriadoCPF.value = "012.345.678-90";
+        inputFuncionarioConsultarCadastroCriadoCPF.value = "123.456.789-00";
         inputFuncionarioConsultarCadastroCriadoProntuario.value = "26.7909";
-        inputFuncionarioConsultarCadastroCriadoNomeCompleto.value = "BARBARA COSTA DE OLIVEIRA";
+        inputFuncionarioConsultarCadastroCriadoNomeCompleto.value = "Juan da Silva";
         inputFuncionarioConsultarCadastroCriadoTipoSaguineo.value = "O-";
-        inputFuncionarioConsultarCadastroCriadoEmail.value = "barbinha123@unigranrio.br";
+        inputFuncionarioConsultarCadastroCriadoEmail.value = "juan123@unigranrio.br";
         inputFuncionarioConsultarCadastroCriadoTelefone.value = "(21) 9 9548-6280";
         inputFuncionarioConsultarCadastroCriadoCEP.value = "89.456-481";
         inputFuncionarioConsultarCadastroCriadoRua.value = "ESTRADA DA LIGAÇÃO";
@@ -505,11 +505,33 @@ function consultarHistorico(){
     
     var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
     var conteudoConsultarHistoricoDetalhes = document.getElementById("conteudoConsultarHistoricoDetalhes");
-    var conteudoConsultarHistorico = document.getElementById("conteudoConsultarHistorico");
+    /* var conteudoConsultarHistorico = document.getElementById("conteudoConsultarHistorico"); */
 
-    if(campoConsultarHistoricoCPF == "85263149075"){
+    var nomeHistoricoDetalhesNome = document.getElementsByClassName("nomeHistoricoDetalhesNome");
+    var nomeHistoricoDetalhesCPF = document.getElementsByClassName("nomeHistoricoDetalhesCPF");
+    var nomeHistoricoDetalhesFuncao = document.getElementsByClassName("nomeHistoricoDetalhesFuncao");
+    var i;
+
+    var descricaoHistoricoDetalhesDataConsulta = document.getElementById("descricaoHistoricoDetalhesDataConsulta");
+    var descricaoHistoricoDetalhesMedico = document.getElementById("descricaoHistoricoDetalhesMedico");
+    var descricaoHistoricoDetalhesCRM = document.getElementById("descricaoHistoricoDetalhesCRM");
+    var descricaoHistoricoDetalhesEspecialidade = document.getElementById("descricaoHistoricoDetalhesEspecialidade");
+
+    if(campoConsultarHistoricoCPF == "12345678900"){
         conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhesMostrar";
-        conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar";
+        /* conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar"; */
+
+        for (i=0; i< nomeHistoricoDetalhesNome.length; i++)
+        nomeHistoricoDetalhesNome[i].innerHTML = "51";
+        for (i=0; i< nomeHistoricoDetalhesCPF.length; i++)
+        nomeHistoricoDetalhesCPF[i].innerHTML = "123.456.789-00";
+        for (i=0; i< nomeHistoricoDetalhesFuncao.length; i++)
+        nomeHistoricoDetalhesFuncao[i].innerHTML = "Engenheiro";
+
+        descricaoHistoricoDetalhesDataConsulta[0].innerHTML = "01/03/2022"
+        descricaoHistoricoDetalhesMedico[0].innerHTML = "Roberto"
+        descricaoHistoricoDetalhesCRM[0].innerHTML = "52"
+        descricaoHistoricoDetalhesEspecialidade[0].innerHTML = "Cardi"
     }
 
 }
@@ -587,16 +609,16 @@ function consultarHistoricoDetalhes(){
         inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "DIABETE";
         inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
     }
-    else if(campoConsultarHistoricoCPF == "01234567890"){
+    else if(campoConsultarHistoricoCPF == "12345678900"){
         consultarHistorico.className = "consultarHistoricoOcultar";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         
-        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "012.345.678-90";
+        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "123.456.789-00";
         inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "26.7909";
-        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "BARBARA COSTA DE OLIVEIRA";
+        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "Juan da Silva";
         inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O-";
-        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "barbinha123@unigranrio.br";
+        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "juan123@unigranrio.br";
         inputFuncionarioConsultarHistoricoDetalhesTelefone.value = "(21) 9 9548-6280";
         inputFuncionarioConsultarHistoricoDetalhesCEP.value = "89.456-481";
         inputFuncionarioConsultarHistoricoDetalhesRua.value = "ESTRADA DA LIGAÇÃO";
