@@ -39,7 +39,7 @@ function Autenticacao(){
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
 
-        title.innerHTML = "TBMGN | Funcionário";
+        title.innerHTML = "SIDADUS | Funcionário";
         body.className = "fundoBranco";
 
         nomeAcessoFuncionarioNome.innerHTML = "Jeniffer Lopez";
@@ -50,7 +50,7 @@ function Autenticacao(){
         acessoFuncionario.className = "acessoFuncionarioMostrar";
         autenticacao.className = "autenticacaoOcultar";
 
-        title.innerHTML = "TBMGN | Funcionário";
+        title.innerHTML = "SIDADUS | Funcionário";
         body.className = "fundoBranco";
 
         nomeAcessoFuncionarioNome.innerHTML = "João Paulo";
@@ -67,7 +67,7 @@ function esqueceuSenha(){
     var esqueceuSenha = document.getElementById("esqueceuSenha");
 
     
-    title.innerHTML = "TBMGN | Esqueceu senha";
+    title.innerHTML = "SIDADUS | Esqueceu senha";
     
     autenticacao.className = "autenticacaoOcultar";
     esqueceuSenha.className = "esqueceuSenhaMostrar";
@@ -120,7 +120,7 @@ function menuConsultarCadastro(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Consultar Cadastro";
+    title.innerHTML = "SIDADUS | Consultar Cadastro";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Consultar Cadastro";
     
 
@@ -158,7 +158,7 @@ function consultarCadastroCriado(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Consultar Cadastro";
+    title.innerHTML = "SIDADUS | Consultar Cadastro";
     nomeTituloTopoAcessoFuncionario.innerHTML = "CONSULTAR CADASTRO";
 
     var campoConsultarCadastroCPF = document.getElementById("campoConsultarCadastroCPF").value;
@@ -342,7 +342,7 @@ function menuCadastrarPaciente(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
     
-    title.innerHTML = "TBMGN | Cadastrar Paciente";
+    title.innerHTML = "SIDADUS | Cadastrar Paciente";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Cadastrar Paciente";
 
     var consultarCadastro = document.getElementById("consultarCadastro");
@@ -457,7 +457,7 @@ function menuConsultarHistorico(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Consultar Historico";
+    title.innerHTML = "SIDADUS | Consultar Historico";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Consultar Historico";
 
     var consultarCadastro = document.getElementById("consultarCadastro");
@@ -500,7 +500,7 @@ function consultarHistorico(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Histórico do Paciente";
+    title.innerHTML = "SIDADUS | Histórico do Paciente";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Histórico do Paciente";
     
     var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
@@ -512,37 +512,29 @@ function consultarHistorico(){
     var nomeHistoricoDetalhesFuncao = document.getElementsByClassName("nomeHistoricoDetalhesFuncao");
     var i;
 
-    var descricaoHistoricoDetalhesDataConsulta = document.getElementById("descricaoHistoricoDetalhesDataConsulta");
-    var descricaoHistoricoDetalhesMedico = document.getElementById("descricaoHistoricoDetalhesMedico");
-    var descricaoHistoricoDetalhesCRM = document.getElementById("descricaoHistoricoDetalhesCRM");
-    var descricaoHistoricoDetalhesEspecialidade = document.getElementById("descricaoHistoricoDetalhesEspecialidade");
-
     if(campoConsultarHistoricoCPF == "12345678900"){
         conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhesMostrar";
         /* conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar"; */
 
         for (i=0; i< nomeHistoricoDetalhesNome.length; i++)
-        nomeHistoricoDetalhesNome[i].innerHTML = "51";
+        nomeHistoricoDetalhesNome[i].innerHTML = "Juan da Silva";
         for (i=0; i< nomeHistoricoDetalhesCPF.length; i++)
         nomeHistoricoDetalhesCPF[i].innerHTML = "123.456.789-00";
         for (i=0; i< nomeHistoricoDetalhesFuncao.length; i++)
         nomeHistoricoDetalhesFuncao[i].innerHTML = "Engenheiro";
-
-        descricaoHistoricoDetalhesDataConsulta[0].innerHTML = "01/03/2022"
-        descricaoHistoricoDetalhesMedico[0].innerHTML = "Roberto"
-        descricaoHistoricoDetalhesCRM[0].innerHTML = "52"
-        descricaoHistoricoDetalhesEspecialidade[0].innerHTML = "Cardi"
     }
+    else{}
 
 }
 function consultarHistoricoDetalhes(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
-    title.innerHTML = "TBMGN | Consulta Completa";
+    title.innerHTML = "SIDADUS | Consulta Completa";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Consulta Completa";
     
-    var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;
+    var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;    
+    var nomeHistoricoDetalhesDataConsulta = document.getElementById("nomeHistoricoDetalhesDataConsulta").textContent;
     
     var consultarHistorico = document.getElementById("consultarHistorico");
     var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
@@ -576,7 +568,7 @@ function consultarHistoricoDetalhes(){
     var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas");
     var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados");
 
-    if(campoConsultarHistoricoCPF == "85263149075"){    
+    if(campoConsultarHistoricoCPF == "85263149075" && nomeHistoricoDetalhesDataConsulta == "01/03/2022"){    
         consultarHistorico.className = "consultarHistoricoOcultar";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
@@ -609,7 +601,7 @@ function consultarHistoricoDetalhes(){
         inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "DIABETE";
         inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
     }
-    else if(campoConsultarHistoricoCPF == "12345678900"){
+    /* else if(campoConsultarHistoricoCPF == "12345678900"){
         consultarHistorico.className = "consultarHistoricoOcultar";
         funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
@@ -641,7 +633,7 @@ function consultarHistoricoDetalhes(){
         inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
         inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "";
         inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "";
-    }
+    } */
 }
 
 

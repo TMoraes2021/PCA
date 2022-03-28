@@ -668,7 +668,7 @@ body{
     margin: auto;
     display: block;
     overflow: scroll;
-    height: 100%;
+    height: 100vh;
     padding-top: 30px;
 }
 .consultarHistoricoMostrar::-webkit-scrollbar { 
@@ -871,14 +871,12 @@ body{
     display: grid;
     grid-template-columns: 200px auto;
     margin: 20px;
+    padding: 10px 5px;
+}
+.historicoDetalhesEsquerda{
+    margin: auto;
 }
 
-.imagemHistoricoDetalhes{
-    width: 90px;
-    height: 90px;
-    margin: 15px auto;
-    border-radius: 50%;
-}
 
 .historicoDetalhesDireita .descricaoHistoricoDetalhes:last-child{
     text-align: right;
@@ -886,6 +884,21 @@ body{
     right: 0;
     bottom: 0;
     padding: 5px;
+}
+.descricaoHistoricoDetalhes{
+    font-weight: bolder;
+}
+#descricaoHistoricoDetalhesIMG{
+    display: flex;
+}
+.imagemHistoricoDetalhes{
+    width: 95px;
+    height: 95px;
+    margin: 10px auto;
+    border-radius: 50%;
+}
+.nomeHistoricoDetalhes{
+    font-weight: 100;
 }
 
 

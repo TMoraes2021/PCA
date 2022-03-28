@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="title" id="title">TBMGN | Login</title>
+    <title class="title" id="title">SIDADUS | Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="icon" href="img/logo3.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -379,6 +379,39 @@
                 <div class="conteudoConsultarHistoricoDetalhes" id="conteudoConsultarHistoricoDetalhes">
                     <div class="historicoDetalhes" id="historicoDetalhes">
                         <div class="historicoDetalhesEsquerda" id="historicoDetalhesEsquerda">
+                            <div class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesIMG"><img src="img/iconeAvatar.png" class="imagemHistoricoDetalhes"></div>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesNome">Nome: 
+                                <span class="nomeHistoricoDetalhes nomeHistoricoDetalhesNome" id="nomeHistoricoDetalhesNome"></span>
+                            </p>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesCPF">CPF: 
+                                <span class="nomeHistoricoDetalhes nomeHistoricoDetalhesCPF" id="nomeHistoricoDetalhesCPF"></span>
+                            </p>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesFuncao">Função: 
+                                <span class="nomeHistoricoDetalhes nomeHistoricoDetalhesFuncao" id="nomeHistoricoDetalhesFuncao"></span>
+                            </p>
+                        </div>
+                        <div class="historicoDetalhesDireita" id="historicoDetalhesDireita">                            
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesDataConsulta">Data da Consulta: 
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesDataConsulta">01/03/2022</span>
+                            </p>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesMedico">Médico: 
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesMedico">Roberto Kail Filho</span>
+                            </p>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesCRM">CRM: 
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesCRM">52788-SP</span>
+                            </p>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesEspecialidade">Especialidade(s):<br> 
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesEspecialidade">CARDIOLOGIA - RQE Nº: 82965<br>CLÍNICA MÉDICA - RQE Nº: 83083</span>
+                            </p>
+                            
+                            <div class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesBotao">
+                                <input type="button" value="VER DETALHES" class="botaoConsultarHistoricoDetalhes" onclick="consultarHistoricoDetalhes()">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="historicoDetalhes" id="historicoDetalhes">
+                        <div class="historicoDetalhesEsquerda" id="historicoDetalhesEsquerda">
                             <img src="img/iconeAvatar.png" class="imagemHistoricoDetalhes">
                             <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesNome">Nome: 
                                 <span class="nomeHistoricoDetalhes nomeHistoricoDetalhesNome" id="nomeHistoricoDetalhesNome"></span>
@@ -392,16 +425,16 @@
                         </div>
                         <div class="historicoDetalhesDireita" id="historicoDetalhesDireita">                            
                             <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesDataConsulta">Data da Consulta: 
-                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesDataConsulta"></span>
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesDataConsulta">10/01/2022</span>
                             </p>
                             <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesMedico">Médico: 
-                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesMedico"></span>
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesMedico">Abel Pereira</span>
                             </p>
                             <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesCRM">CRM: 
-                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesCRM"></span>
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesCRM">13869-SP</span>
                             </p>
-                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesEspecialidade">Especialidade(s): 
-                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesEspecialidade"></span>
+                            <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesEspecialidade">Especialidade(s):<br> 
+                                <span class="nomeHistoricoDetalhes" id="nomeHistoricoDetalhesEspecialidade">CARDIOLOGIA - RQE Nº: 8944<br>MEDICINA INTENSIVA - RQE Nº: 33612</span>
                             </p>
                             
                             <div class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesBotao">
