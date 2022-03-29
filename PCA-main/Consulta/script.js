@@ -195,13 +195,13 @@ function consultarCadastroCriado(){
     var inputFuncionarioConsultarCadastroCriadoDoencasCronicas = document.getElementById("inputFuncionarioConsultarCadastroCriadoDoencasCronicas");
     var inputFuncionarioConsultarCadastroCriadoRemediosControlados = document.getElementById("inputFuncionarioConsultarCadastroCriadoRemediosControlados");
 
-    if(campoConsultarCadastroCPF == "85263149075"){    
+    if(campoConsultarCadastroCPF.value == "85263149075"){    
         consultarCadastro.className = "consultarCadastroOcultar";
         funcionarioConsultarCadastroCriado.className = "funcionarioConsultarCadastroCriadoMostrar";
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         
         inputFuncionarioConsultarCadastroCriadoCPF.value = "852.631.490-75";
-        inputFuncionarioConsultarCadastroCriadoProntuario.value = "26.7908";
+        inputFuncionarioConsultarCadastroCriadoProntuario.value = "12.3456";
         inputFuncionarioConsultarCadastroCriadoNomeCompleto.value = "JOAQUIM OLIVEIRA MONOEL QUEIROZ DA SILVA";
         inputFuncionarioConsultarCadastroCriadoTipoSaguineo.value = "O+";
         inputFuncionarioConsultarCadastroCriadoEmail.value = "joaquimroz@unigranrio.br";
@@ -234,7 +234,7 @@ function consultarCadastroCriado(){
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
         
         inputFuncionarioConsultarCadastroCriadoCPF.value = "123.456.789-00";
-        inputFuncionarioConsultarCadastroCriadoProntuario.value = "26.7909";
+        inputFuncionarioConsultarCadastroCriadoProntuario.value = "12.3456";
         inputFuncionarioConsultarCadastroCriadoNomeCompleto.value = "Juan da Silva";
         inputFuncionarioConsultarCadastroCriadoTipoSaguineo.value = "O-";
         inputFuncionarioConsultarCadastroCriadoEmail.value = "juan123@unigranrio.br";
@@ -254,9 +254,9 @@ function consultarCadastroCriado(){
         inputFuncionarioConsultarCadastroCriadoTelefonePai.value = "(21) 9 9548-6280";
         inputFuncionarioConsultarCadastroCriadoNomeMae.value = "MAIRA COSTA DE OLIVEIRA";
         inputFuncionarioConsultarCadastroCriadoTelefoneMae.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarCadastroCriadoTipoMedico.value = "ORTOPEDIA";
-        inputFuncionarioConsultarCadastroCriadoSalaAtendimento.value = "A";
-        inputFuncionarioConsultarCadastroCriadoSintomas.value = "DORES ABDOMINAIS";
+        inputFuncionarioConsultarCadastroCriadoTipoMedico.value = "CARDIOLOGIA";
+        inputFuncionarioConsultarCadastroCriadoSalaAtendimento.value = "02";
+        inputFuncionarioConsultarCadastroCriadoSintomas.value = "DORES NO PEITO";
         inputFuncionarioConsultarCadastroCriadoAlergias.value = "";
         inputFuncionarioConsultarCadastroCriadoDoencasCronicas.value = "";
         inputFuncionarioConsultarCadastroCriadoRemediosControlados.value = "";
@@ -512,6 +512,9 @@ function consultarHistorico(){
     var nomeHistoricoDetalhesFuncao = document.getElementsByClassName("nomeHistoricoDetalhesFuncao");
     var i;
 
+
+    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
+
     if(campoConsultarHistoricoCPF == "12345678900"){
         conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhesMostrar";
         /* conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar"; */
@@ -522,119 +525,97 @@ function consultarHistorico(){
         nomeHistoricoDetalhesCPF[i].innerHTML = "123.456.789-00";
         for (i=0; i< nomeHistoricoDetalhesFuncao.length; i++)
         nomeHistoricoDetalhesFuncao[i].innerHTML = "Engenheiro";
+
+        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
     }
-    else{}
 
 }
+
 function consultarHistoricoDetalhes(){
     var title = document.getElementById("title");
     var nomeTituloTopoAcessoFuncionario = document.getElementById("nomeTituloTopoAcessoFuncionario");
 
     title.innerHTML = "SIDADUS | Consulta Completa";
     nomeTituloTopoAcessoFuncionario.innerHTML = "Consulta Completa";
-    
-    var campoConsultarHistoricoCPF = document.getElementById("campoConsultarHistoricoCPF").value;    
-    var nomeHistoricoDetalhesDataConsulta = document.getElementById("nomeHistoricoDetalhesDataConsulta").textContent;
-    
-    var consultarHistorico = document.getElementById("consultarHistorico");
+
+    var conteudoConsultarHistorico = document.getElementById("conteudoConsultarHistorico");
+    var conteudoConsultarHistoricoDetalhes = document.getElementById("conteudoConsultarHistoricoDetalhes");
     var funcionarioConsultarHistoricoDetalhes = document.getElementById("funcionarioConsultarHistoricoDetalhes");
-    var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
 
-    var inputFuncionarioConsultarHistoricoDetalhesCPF = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCPF");
-    var inputFuncionarioConsultarHistoricoDetalhesProntuario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesProntuario");
-    var inputFuncionarioConsultarHistoricoDetalhesNomeCompleto = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeCompleto");
-    var inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo");
-    var inputFuncionarioConsultarHistoricoDetalhesEmail = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesEmail");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefone = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefone");
-    var inputFuncionarioConsultarHistoricoDetalhesCEP = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCEP");
-    var inputFuncionarioConsultarHistoricoDetalhesRua = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRua");
-    var inputFuncionarioConsultarHistoricoDetalhesNumero = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNumero");
-    var inputFuncionarioConsultarHistoricoDetalhesComplemento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesComplemento");
-    var inputFuncionarioConsultarHistoricoDetalhesCidade = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCidade");
-    var inputFuncionarioConsultarHistoricoDetalhesMunicipio = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesMunicipio");
-    var inputFuncionarioConsultarHistoricoDetalhesPontoReferencia = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesPontoReferencia");
-    var inputFuncionarioConsultarHistoricoDetalhesUF = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesUF");
-    var inputFuncionarioConsultarHistoricoDetalhesLocalNascimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesLocalNascimento");
-    var inputFuncionarioConsultarHistoricoDetalhesEstadoCivil = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesEstadoCivil");
-    var inputFuncionarioConsultarHistoricoDetalhesSexo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSexo");
-    var inputFuncionarioConsultarHistoricoDetalhesNomePai = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomePai");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefonePai = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefonePai");
-    var inputFuncionarioConsultarHistoricoDetalhesNomeMae = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeMae");
-    var inputFuncionarioConsultarHistoricoDetalhesTelefoneMae = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefoneMae");
-    var inputFuncionarioConsultarHistoricoDetalhesTipoMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoMedico");
-    var inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento");
-    var inputFuncionarioConsultarHistoricoDetalhesSintomas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSintomas");
-    var inputFuncionarioConsultarHistoricoDetalhesAlergias = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesAlergias");
-    var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas");
-    var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados");
-
-    if(campoConsultarHistoricoCPF == "85263149075" && nomeHistoricoDetalhesDataConsulta == "01/03/2022"){    
-        consultarHistorico.className = "consultarHistoricoOcultar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        
-        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "852.631.490-75";
-        inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "26.7908";
-        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "JOAQUIM OLIVEIRA MONOEL QUEIROZ DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O+";
-        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "joaquimroz@unigranrio.br";
-        inputFuncionarioConsultarHistoricoDetalhesTelefone.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesCEP.value = "89.456-481";
-        inputFuncionarioConsultarHistoricoDetalhesRua.value = "ESTRADA DA LIGAÇÃO";
-        inputFuncionarioConsultarHistoricoDetalhesNumero.value = "500";
-        inputFuncionarioConsultarHistoricoDetalhesComplemento.value = "LOTE:49 QUADRA:52";
-        inputFuncionarioConsultarHistoricoDetalhesCidade.value = "BELFORD-ROXO";
-        inputFuncionarioConsultarHistoricoDetalhesMunicipio.value = "RIO DE JANEIRO";
-        inputFuncionarioConsultarHistoricoDetalhesPontoReferencia.value = "CIEP366";
-        inputFuncionarioConsultarHistoricoDetalhesUF.value = "RJ";
-        inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
-        inputFuncionarioConsultarHistoricoDetalhesEstadoCivil.value = "CASADO";
-        inputFuncionarioConsultarHistoricoDetalhesSexo.value = "M";
-        inputFuncionarioConsultarHistoricoDetalhesNomePai.value = "JÓSE ALBERTO DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefonePai.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesNomeMae.value = "JOANA OLIVEIRA MONOEL QUEIROZ DA SILVA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefoneMae.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "ORTOPEDIA";
-        inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "A";
-        inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "DORES NOS PÉS";
-        inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "DIABETE";
-        inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "Jardiance 25mg, Ozempic 0,25mg";
-    }
-    /* else if(campoConsultarHistoricoCPF == "12345678900"){
-        consultarHistorico.className = "consultarHistoricoOcultar";
-        funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
-        funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
-        
-        inputFuncionarioConsultarHistoricoDetalhesCPF.value = "123.456.789-00";
-        inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "26.7909";
-        inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "Juan da Silva";
-        inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O-";
-        inputFuncionarioConsultarHistoricoDetalhesEmail.value = "juan123@unigranrio.br";
-        inputFuncionarioConsultarHistoricoDetalhesTelefone.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesCEP.value = "89.456-481";
-        inputFuncionarioConsultarHistoricoDetalhesRua.value = "ESTRADA DA LIGAÇÃO";
-        inputFuncionarioConsultarHistoricoDetalhesNumero.value = "500";
-        inputFuncionarioConsultarHistoricoDetalhesComplemento.value = "LOTE:49 QUADRA:52";
-        inputFuncionarioConsultarHistoricoDetalhesCidade.value = "DUQUE DE CAXIAS";
-        inputFuncionarioConsultarHistoricoDetalhesMunicipio.value = "RIO DE JANEIRO";
-        inputFuncionarioConsultarHistoricoDetalhesPontoReferencia.value = "UNIGRANRIO";
-        inputFuncionarioConsultarHistoricoDetalhesUF.value = "RJ";
-        inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
-        inputFuncionarioConsultarHistoricoDetalhesEstadoCivil.value = "CASADO";
-        inputFuncionarioConsultarHistoricoDetalhesSexo.value = "F";
-        inputFuncionarioConsultarHistoricoDetalhesNomePai.value = "WALDIR DE OLIVEIRA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefonePai.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesNomeMae.value = "MAIRA COSTA DE OLIVEIRA";
-        inputFuncionarioConsultarHistoricoDetalhesTelefoneMae.value = "(21) 9 9548-6280";
-        inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "ORTOPEDIA";
-        inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "A";
-        inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "DORES ABDOMINAIS";
-        inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "";
-        inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "";
-    } */
+    conteudoConsultarHistorico.className = "conteudoConsultarHistoricoOcultar";
+    conteudoConsultarHistoricoDetalhes.className = "conteudoConsultarHistoricoDetalhes";
+    funcionarioConsultarHistoricoDetalhes.className = "funcionarioConsultarHistoricoDetalhesMostrar";
+    
 }
+
+var inputFuncionarioConsultarHistoricoDetalhesProntuario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesProntuario")
+var inputFuncionarioConsultarHistoricoDetalhesDataAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDataAtendimento")
+var inputFuncionarioConsultarHistoricoDetalhesHorario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesHorario")
+var inputFuncionarioConsultarHistoricoDetalhesTelefoneContato = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefoneContato")
+var inputFuncionarioConsultarHistoricoDetalhesNomeCompleto = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeCompleto")
+var inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo")
+var inputFuncionarioConsultarHistoricoDetalhesLocalNascimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesLocalNascimento")
+var inputFuncionarioConsultarHistoricoDetalhesSexo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSexo")
+var inputFuncionarioConsultarHistoricoDetalhesIdade = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesIdade")
+var inputFuncionarioConsultarHistoricoDetalhesTipoMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoMedico")
+var inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento")
+var inputFuncionarioConsultarHistoricoDetalhesNomeMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeMedico")
+var inputFuncionarioConsultarHistoricoDetalhesCRM = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCRM")
+var inputFuncionarioConsultarHistoricoDetalhesAlergias = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesAlergias")
+var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas")
+var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados")
+var inputFuncionarioConsultarHistoricoDetalhesSintomas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSintomas")
+var inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas")
+var inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados")
+var inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados")
+
+
+
+
+$('#historicoDetalhes1234567890001032022 #botaoConsultarHistoricoDetalhes').click(function(){
+    inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "12.3456";
+    inputFuncionarioConsultarHistoricoDetalhesDataAtendimento.value = "01/03/2022";
+    inputFuncionarioConsultarHistoricoDetalhesHorario.value = "15:40";
+    inputFuncionarioConsultarHistoricoDetalhesTelefoneContato.value = "(21) 9 9548-6280";
+    inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "Juan da Silva";
+    inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O+";
+    inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
+    inputFuncionarioConsultarHistoricoDetalhesSexo.value = "M";
+    inputFuncionarioConsultarHistoricoDetalhesIdade.value = "40";
+    inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "CARDIOLOGIA";
+    inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "02";
+    inputFuncionarioConsultarHistoricoDetalhesNomeMedico.value = "Roberto Kail Filho";
+    inputFuncionarioConsultarHistoricoDetalhesCRM.value = "52788-SP";
+    inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "dores no peito";
+    inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas.value = "Elevamento dos batimentos cardiacos";
+    inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados.value = "PROPRANOLOL 25mg 1x dia";
+});
+$('#historicoDetalhes1234567890010012022 #botaoConsultarHistoricoDetalhes').click(function(){
+    inputFuncionarioConsultarHistoricoDetalhesProntuario.value = "12.3456";
+    inputFuncionarioConsultarHistoricoDetalhesDataAtendimento.value = "10/01/2022";
+    inputFuncionarioConsultarHistoricoDetalhesHorario.value = "10:00";
+    inputFuncionarioConsultarHistoricoDetalhesTelefoneContato.value = "(21) 9 9548-6280";
+    inputFuncionarioConsultarHistoricoDetalhesNomeCompleto.value = "Juan da Silva";
+    inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo.value = "O+";
+    inputFuncionarioConsultarHistoricoDetalhesLocalNascimento.value = "JACAREPAGUÁ";
+    inputFuncionarioConsultarHistoricoDetalhesSexo.value = "M";
+    inputFuncionarioConsultarHistoricoDetalhesIdade.value = "40";
+    inputFuncionarioConsultarHistoricoDetalhesTipoMedico.value = "CARDIOLOGIA";
+    inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento.value = "05";
+    inputFuncionarioConsultarHistoricoDetalhesNomeMedico.value = "Abel Pereira";
+    inputFuncionarioConsultarHistoricoDetalhesCRM.value = "13869-SP";
+    inputFuncionarioConsultarHistoricoDetalhesAlergias.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesRemediosControlados.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesSintomas.value = "dores no peito";
+    inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas.value = "";
+    inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados.value = "Eletrocardiograma";
+    inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados.value = "";
+});
 
 
 

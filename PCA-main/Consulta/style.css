@@ -741,104 +741,81 @@ body{
     flex:1 1 auto;
     margin: 5px 3px;
 }
-#descricaoFuncionarioConsultarHistoricoDetalhesCPF, #descricaoFuncionarioConsultarHistoricoDetalhesProntuario, #descricaoFuncionarioConsultarHistoricoDetalhesTipoMedico, #descricaoFuncionarioConsultarHistoricoDetalhesSalaAtendimento{
-    width: 255px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesCPF, #inputFuncionarioConsultarHistoricoDetalhesProntuario, #inputFuncionarioConsultarHistoricoDetalhesTipoMedico, #inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento{
-    width: 255px;
-}
-
-
-#descricaoFuncionarioConsultarHistoricoDetalhesNomeCompleto, #descricaoFuncionarioConsultarHistoricoDetalhesPontoReferencia{
-    width: 420px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesNomeCompleto, #inputFuncionarioConsultarHistoricoDetalhesPontoReferencia{
-    width: 420px;
-}
-
-#descricaoFuncionarioConsultarHistoricoDetalhesTipoSaguineo, #descricaoFuncionarioConsultarHistoricoDetalhesNumero, #descricaoFuncionarioConsultarHistoricoDetalhesUF, #descricaoFuncionarioConsultarHistoricoDetalhesSexo{
-    width: 90px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo, #inputFuncionarioConsultarHistoricoDetalhesNumero, #inputFuncionarioConsultarHistoricoDetalhesUF, #inputFuncionarioConsultarHistoricoDetalhesSexo{
-    width: 90px;
-    text-align: center;
-}
-
-
-#descricaoFuncionarioConsultarHistoricoDetalhesEmail{
-    width: 340px;
-
-}
-#inputFuncionarioConsultarHistoricoDetalhesEmail{
-    width: 340px;
-}
-
-#descricaoFuncionarioConsultarHistoricoDetalhesTelefone{
-    width: 170px;
-
-}
-#inputFuncionarioConsultarHistoricoDetalhesTelefone{
-    width: 170px;
-    text-align: center;
-}
-
-
-#descricaoFuncionarioConsultarHistoricoDetalhesCEP, #descricaoFuncionarioConsultarHistoricoDetalhesEstadoCivil{
-    width: 110px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesCEP, #inputFuncionarioConsultarHistoricoDetalhesEstadoCivil{
-    width: 110px;
-}
-
-#descricaoFuncionarioConsultarHistoricoDetalhesRua, #descricaoFuncionarioConsultarHistoricoDetalhesLocalNascimento{
-    width: 299px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesRua, #inputFuncionarioConsultarHistoricoDetalhesLocalNascimento{
-    width: 299px;
-}
-
-#descricaoFuncionarioConsultarHistoricoDetalhesComplemento, #descricaoFuncionarioConsultarHistoricoDetalhesCidade, #descricaoFuncionarioConsultarHistoricoDetalhesMunicipio{
-    width: 165px;
-}
-#inputFuncionarioConsultarHistoricoDetalhesComplemento, #inputFuncionarioConsultarHistoricoDetalhesCidade, #inputFuncionarioConsultarHistoricoDetalhesMunicipio{
-    width: 165px;
-}
-
-
-#descricaoFuncionarioConsultarHistoricoDetalhesNomePai, #descricaoFuncionarioConsultarHistoricoDetalhesNomeMae{
-    width: 390px;
-
-}
-#inputFuncionarioConsultarHistoricoDetalhesNomePai, #inputFuncionarioConsultarHistoricoDetalhesNomeMae{
-    width: 390px;
-}
-#descricaoFuncionarioConsultarHistoricoDetalhesTelefonePai, #descricaoFuncionarioConsultarHistoricoDetalhesTelefoneMae{
-    width: 120px;
-
-}
-#inputFuncionarioConsultarHistoricoDetalhesTelefonePai, #inputFuncionarioConsultarHistoricoDetalhesTelefoneMae{
-    width: 120px;
-    text-align: center;
-}
-
-
-#descricaoFuncionarioConsultarHistoricoDetalhesSintomas, #descricaoFuncionarioConsultarHistoricoDetalhesAlergias, #descricaoFuncionarioConsultarHistoricoDetalhesDoencasCronicas, #descricaoFuncionarioConsultarHistoricoDetalhesRemediosControlados{
+#descricaoFuncionarioConsultarHistoricoDetalhesProntuario,#descricaoFuncionarioConsultarHistoricoDetalhesSintomas, #descricaoFuncionarioConsultarHistoricoDetalhesAlergias, #descricaoFuncionarioConsultarHistoricoDetalhesDoencasCronicas, #descricaoFuncionarioConsultarHistoricoDetalhesRemediosControlados{
     width: 520px;
-
 }
-#inputFuncionarioConsultarHistoricoDetalhesSintomas, #inputFuncionarioConsultarHistoricoDetalhesAlergias, #inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas, #inputFuncionarioConsultarHistoricoDetalhesRemediosControlados{
+#inputFuncionarioConsultarHistoricoDetalhesProntuario,#inputFuncionarioConsultarHistoricoDetalhesSintomas, #inputFuncionarioConsultarHistoricoDetalhesAlergias, #inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas, #inputFuncionarioConsultarHistoricoDetalhesRemediosControlados,#inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas,#inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados,#inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados{
     width: 520px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesSintomas, #inputFuncionarioConsultarHistoricoDetalhesAlergias, #inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas, #inputFuncionarioConsultarHistoricoDetalhesRemediosControlados,#inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas,#inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados,#inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados{
     text-align: center;
     resize: none;    
     height: 70px;
     text-align: left;
 }
-#inputFuncionarioConsultarHistoricoDetalhesSintomas{
+#inputFuncionarioConsultarHistoricoDetalhesSintomas,#inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas,#inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados,#inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados{
     height: 150px;
 }
 .inputFuncionarioConsultarHistoricoDetalhes{
     padding: 10px;
     text-transform: uppercase;
+}
+
+#descricaoFuncionarioConsultarHistoricoDetalhesDataAtendimento{
+    width: 170px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesDataAtendimento{
+    width: 170px;
+    text-align: center;
+}
+#descricaoFuncionarioConsultarHistoricoDetalhesHorario{
+    width: 110px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesHorario{
+    width: 110px;
+    text-align: center;
+}
+#descricaoFuncionarioConsultarHistoricoDetalhesTelefoneContato{
+    width: 220px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesTelefoneContato{
+    width: 220px;
+    text-align: center;
+}
+
+#descricaoFuncionarioConsultarHistoricoDetalhesNomeCompleto{
+    width: 420px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesNomeCompleto{
+    width: 420px;
+}
+#descricaoFuncionarioConsultarHistoricoDetalhesTipoSaguineo,#descricaoFuncionarioConsultarHistoricoDetalhesSexo,#descricaoFuncionarioConsultarHistoricoDetalhesIdade{
+    width: 90px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo,#inputFuncionarioConsultarHistoricoDetalhesSexo,#inputFuncionarioConsultarHistoricoDetalhesIdade{
+    width: 90px;
+    text-align: center;
+}
+
+#descricaoFuncionarioConsultarHistoricoDetalhesLocalNascimento{
+    width: 320px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesLocalNascimento{
+    width: 320px;
+}
+
+#descricaoFuncionarioConsultarHistoricoDetalhesTipoMedico,#descricaoFuncionarioConsultarHistoricoDetalhesNomeMedico{
+    width: 412px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesTipoMedico,#inputFuncionarioConsultarHistoricoDetalhesNomeMedico{
+    width: 412px;
+}
+#descricaoFuncionarioConsultarHistoricoDetalhesSalaAtendimento,#descricaoFuncionarioConsultarHistoricoDetalhesCRM{
+    width: 98px;
+}
+#inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento,#inputFuncionarioConsultarHistoricoDetalhesCRM{
+    width: 98px;
+    text-align: center;
 }
 
 .conteudobotaoConsultarHistoricoDetalhes{
@@ -855,7 +832,6 @@ body{
     cursor: pointer;
 }
 
-
 /*ConteudoConsultarHistoricoDetalhes*/
 .conteudoConsultarHistoricoDetalhes{
     display: none;
@@ -871,13 +847,20 @@ body{
     display: grid;
     grid-template-columns: 200px auto;
     margin: 20px;
-    padding: 10px 5px;
 }
 .historicoDetalhesEsquerda{
     margin: auto;
+    height: 100%;
+    width: 100%;
+    background-color: #126dde;
+    border-right: #72C0F8 20px solid;
+	border-radius: 0px 20% 20% 0px;
+    padding: 10px 5px;
 }
 
-
+.conteudoHistoricoDetalhes{
+    display: flex;
+}
 .historicoDetalhesDireita .descricaoHistoricoDetalhes:last-child{
     text-align: right;
     position: relative;
@@ -885,8 +868,12 @@ body{
     bottom: 0;
     padding: 5px;
 }
+.historicoDetalhesDireita {
+    padding: 10px 5px;
+}
 .descricaoHistoricoDetalhes{
     font-weight: bolder;
+    margin: auto;
 }
 #descricaoHistoricoDetalhesIMG{
     display: flex;
