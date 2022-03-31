@@ -74,13 +74,6 @@ function esqueceuSenha(){
 
 }
 
-
-function dadoMenuAcessoFuncionarioOver(){
-    var dadoMenuAcessoFuncionario = document.getElementById("dadoMenuAcessoFuncionario");
-    
-    dadoMenuAcessoFuncionario.className = "dadoMenuAcessoFuncionarioOver";
-}
-
 function menuHamburguer(){
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var acessoFuncionario = document.getElementById("acessoFuncionario");

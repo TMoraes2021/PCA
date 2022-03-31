@@ -102,14 +102,66 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoAutenticar 1s infinite alternate;
+}  
+@keyframes botaoAutenticar {
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoAutenticar:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
-.LinkEsqueceuSenha{
+
+.linkEsqueceuSenha{
+    position: relative;
     text-align: right;
     padding-right: 5px;
     cursor: pointer;
     margin-top: 31%;
     margin-bottom: -13%;
+    animation: linkEsqueceuSenha 1s infinite alternate;
+}  
+@keyframes linkEsqueceuSenha{
+    from {
+        transform:translateX(0px) scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform:translateX(1px) scale(1.0);
+    }
+}
+.linkEsqueceuSenha:hover{
+    animation: none;
+    position: relative;
+}
+.linkEsqueceuSenha:before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+.linkEsqueceuSenha:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /*Esqueceu Senha*/
@@ -186,15 +238,53 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoEsqueceuSenha 1s infinite alternate;
+}  
+@keyframes botaoEsqueceuSenha{
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoEsqueceuSenha:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
 .LinkbotaoVoltar{
     text-align: right;
+    padding-top: 5px;
     padding-right: 5px;
     cursor: pointer;
-    color: #ff0000;
     margin-top: -15%;
-    margin-bottom: 8%;
+}
+#botaoVoltar{
+    font-size: 27px;
+    color: #ff0000;
+    margin-bottom: 25px;
+    transition-delay: 0.1s;
+    border-radius: 50%;
+    animation: botaoVoltar 1s infinite alternate;
+}
+@keyframes botaoVoltar{
+    from {
+        background-color: #ffffff;
+    }
+    to {
+        background-color: #ff0000;
+        color: #ffffff;
+        border-radius: 50%;
+    }
+}
+#botaoVoltar:hover{
+    color: #ffc1c1;
+    background-color: #ff0000;
+    animation: none;
 }
 
 
@@ -240,13 +330,40 @@ body{
 }
 #botaoHamburguer,#botaoFechar{
     color: #ffffff;
-    padding: 12px;
     background-color: #126dde;
+    padding: 12px;
+    font-size: 24px;
     border-radius: 0% 0% 50%;
+}
+#botaoHamburguer{
+    animation: botaoHamburguer 1.2s infinite alternate;
+}
+@keyframes botaoHamburguer{
+    from {
+        border-radius: 0%;
+    }
+    to {
+        border-radius: 0% 0% 50%;
+    }
+}
+#botaoFechar{
+    animation: botaoFechar 1.2s infinite alternate;
+}
+@keyframes botaoFechar{
+    from {
+        border-radius: 0% 0% 50%;
+    }
+    to {
+        border-radius: 0%;
+    }
 }
 #botaoFechar{
     border-right: #ffffff solid 1px;
     border-bottom: #ffffff solid 1px;
+}
+#botaoFechar:hover, #botaoHamburguer:hover{
+    animation: none;
+    border-radius: 0% 0% 50%;
 }
 .dadosAcessoFuncionario{
     display: grid;
@@ -368,6 +485,22 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoConsultarCadastro 1s infinite alternate;
+}  
+@keyframes botaoConsultarCadastro{
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoConsultarCadastro:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
 
@@ -649,13 +782,28 @@ body{
 }
 .botaoCadastrarPaciente{
     margin: 10px auto;
-    margin-bottom: 20px;
     padding: 5px 15px;
     border: #126dde 1px solid;
     background-color:#126dde;
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoCadastrarPaciente 1s infinite alternate;
+}  
+@keyframes botaoCadastrarPaciente{
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoCadastrarPaciente:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
 
@@ -708,6 +856,22 @@ body{
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoConsultarHistorico 1s infinite alternate;
+}  
+@keyframes botaoConsultarHistorico{
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoConsultarHistorico:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
 
@@ -823,13 +987,28 @@ body{
 }
 .botaoConsultarHistoricoDetalhes{
     margin: 10px auto;
-    margin-bottom: 20px;
     padding: 5px 15px;
     border: #126dde 1px solid;
     background-color:#126dde;
     color: #ffffff;
     font-weight: bolder;
     cursor: pointer;
+    font-size: 14px;
+    animation: botaoConsultarHistoricoDetalhes 1s infinite alternate;
+}  
+@keyframes botaoConsultarHistoricoDetalhes{
+    from {
+        transform:translateX(0px) scale(0.95);
+    }
+    to {
+        transform:translateX(0px) scale(1.0);
+    }
+}
+.botaoConsultarHistoricoDetalhes:hover{
+    font-size: 16px;
+    padding: 4px 12px;
+    animation: none;
+    border-radius: 7px;
 }
 
 /*ConteudoConsultarHistoricoDetalhes*/
