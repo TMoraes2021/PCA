@@ -33,7 +33,7 @@ body{
 
 .divisaoAutenticacaoEsquerda{
     color: #ffffff;
-    background:url(img/fundo1.jpeg);
+    background:url(img/FUNDO/fundo1.jpeg);
     background-size: cover;
     background-position: center;
     padding: 40% 0px;
@@ -103,21 +103,14 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoAutenticar 1s infinite alternate;
-}  
-@keyframes botaoAutenticar {
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoAutenticar:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* color: #303030; */
+    /* transform:translateX(1px) scale(1.1); */
 }
 
 
@@ -128,40 +121,12 @@ body{
     cursor: pointer;
     margin-top: 31%;
     margin-bottom: -13%;
-    animation: linkEsqueceuSenha 1s infinite alternate;
-}  
-@keyframes linkEsqueceuSenha{
-    from {
-        transform:translateX(0px) scale(0.9);
-        opacity: 0;
-    }
-    to {
-        transform:translateX(1px) scale(1.0);
-    }
+    font-size: 16px;
 }
 .linkEsqueceuSenha:hover{
-    animation: none;
     position: relative;
-}
-.linkEsqueceuSenha:before {
-    content: "";
-    position: absolute;
-    width: 150px;
-    height: 3px;
-    bottom: 0;
-    right: 0;
-    margin-right: 5px;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-.linkEsqueceuSenha:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+    font-size: 19px;
+    margin-top: 30%;
 }
 
 /*Esqueceu Senha*/
@@ -184,7 +149,7 @@ body{
 
 .divisaoEsqueceuSenhaEsquerda{
     color: #ffffff;
-    background:url(img/fundo1.jpeg);
+    background:url(img/FUNDO/fundo1.jpeg);
     background-size: cover;
     background-position: center;
     padding: 40% 0px;
@@ -239,21 +204,13 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoEsqueceuSenha 1s infinite alternate;
-}  
-@keyframes botaoEsqueceuSenha{
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoEsqueceuSenha:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* transform:translateX(1px) scale(1.1); */
 }
 
 .LinkbotaoVoltar{
@@ -284,7 +241,6 @@ body{
 #botaoVoltar:hover{
     color: #ffc1c1;
     background-color: #ff0000;
-    animation: none;
 }
 
 
@@ -335,34 +291,11 @@ body{
     font-size: 24px;
     border-radius: 0% 0% 50%;
 }
-#botaoHamburguer{
-    animation: botaoHamburguer 1.2s infinite alternate;
-}
-@keyframes botaoHamburguer{
-    from {
-        border-radius: 0%;
-    }
-    to {
-        border-radius: 0% 0% 50%;
-    }
-}
-#botaoFechar{
-    animation: botaoFechar 1.2s infinite alternate;
-}
-@keyframes botaoFechar{
-    from {
-        border-radius: 0% 0% 50%;
-    }
-    to {
-        border-radius: 0%;
-    }
-}
 #botaoFechar{
     border-right: #ffffff solid 1px;
     border-bottom: #ffffff solid 1px;
 }
 #botaoFechar:hover, #botaoHamburguer:hover{
-    animation: none;
     border-radius: 0% 0% 50%;
 }
 .dadosAcessoFuncionario{
@@ -486,21 +419,13 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoConsultarCadastro 1s infinite alternate;
-}  
-@keyframes botaoConsultarCadastro{
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoConsultarCadastro:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* transform:translateX(1px) scale(1.1); */
 }
 
 
@@ -789,21 +714,13 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoCadastrarPaciente 1s infinite alternate;
-}  
-@keyframes botaoCadastrarPaciente{
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoCadastrarPaciente:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* transform:translateX(1px) scale(1.1); */
 }
 
 
@@ -857,21 +774,13 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoConsultarHistorico 1s infinite alternate;
-}  
-@keyframes botaoConsultarHistorico{
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoConsultarHistorico:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* transform:translateX(1px) scale(1.1); */
 }
 
 
@@ -981,9 +890,8 @@ body{
     width: 98px;
     text-align: center;
 }
-
 .conteudobotaoConsultarHistoricoDetalhes{
-    margin: auto;
+    width: 100%;
 }
 .botaoConsultarHistoricoDetalhes{
     margin: 10px auto;
@@ -994,21 +902,17 @@ body{
     font-weight: bolder;
     cursor: pointer;
     font-size: 14px;
-    animation: botaoConsultarHistoricoDetalhes 1s infinite alternate;
-}  
-@keyframes botaoConsultarHistoricoDetalhes{
-    from {
-        transform:translateX(0px) scale(0.95);
-    }
-    to {
-        transform:translateX(0px) scale(1.0);
-    }
 }
 .botaoConsultarHistoricoDetalhes:hover{
     font-size: 16px;
     padding: 4px 12px;
-    animation: none;
-    border-radius: 7px;
+    background-color: #23E5FF;
+    border: #23E5FF 1px solid;
+    /* transform:translateX(1px) scale(1.1); */
+}
+
+.conteudobotaoConsultarHistorico{
+    margin: 50px auto;
 }
 
 /*ConteudoConsultarHistoricoDetalhes*/
@@ -1024,16 +928,16 @@ body{
 .historicoDetalhes{
     border: #939393 1px solid;
     display: grid;
-    grid-template-columns: 200px auto;
+    grid-template-columns: 230px auto;
     margin: 20px;
 }
 .historicoDetalhesEsquerda{
     margin: auto;
     height: 100%;
     width: 100%;
-    background-color: #126dde;
-    border-right: #72C0F8 5px solid;
-	border-radius: 0px 25% 25% 0px;
+    background:url(img/FUNDO/Detalhe-ondas-historico.png);
+    background-size: cover;
+    background-position: center;
     padding: 10px 5px;
 }
 
@@ -1055,6 +959,9 @@ body{
 .descricaoHistoricoDetalhes{
     font-weight: bolder;
     margin: auto;
+}
+.historicoDetalhesEsquerda .descricaoHistoricoDetalhes{
+    color: #ffffff;
 }
 #descricaoHistoricoDetalhesIMG{
     display: flex;
@@ -1110,4 +1017,23 @@ body{
         margin: 0px auto;
         grid-template-columns: 220px auto;
     }
+}
+
+@media print{
+    @page{
+        size:landscape;
+    }
+    body{
+        -webkit-print-color-adjust: exact;
+    }
+    .acessoFuncionarioMostrar{
+        grid-template-columns: 100%;
+    }
+    .menuAcessoFuncionario{
+        display: none;
+    }
+    .CadastrarPaciente,.consultarCadastro,.conteudoConsultarHistoricoDetalhes,.funcionarioConsultarHistoricoDetalhesMostrar{
+        overflow:none;
+    }
+
 }

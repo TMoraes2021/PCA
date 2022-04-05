@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="title" id="title">SIDADUS | Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="icon" href="img/logoSIDADUS.png" type="image/x-icon">
+	<link rel="icon" href="img/LOGO/LogoPreto.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
 
 </head>
-<body id="body" class="body" onKeyDown="printPage()">    
+<body id="body" class="body">    
     <section class="autenticacao" id="autenticacao">
         <div class="divisaoAutenticacao">
             <div class="divisaoAutenticacaoEsquerda">
@@ -93,7 +93,7 @@
                 <p class="LinkbotaoFechar"><span class="material-icons" id="botaoFechar" onclick="menuFechar()">close</span></p>
             </div>
             <div class="dadosAcessoFuncionario" id="dadosAcessoFuncionario">
-                <img src="img/iconeAvatar.png" class="imagemFuncionario">
+                <img src="img/ICONE/iconeAvatar.png" class="imagemFuncionario" id="imagemFuncionario">
                 <p class="descricaoMenuAcessoFuncionario" id="descricaoMenuAcessoFuncionarioNome">Nome: 
                     <span class="nomeAcessoFuncionario" id="nomeAcessoFuncionarioNome"></span>
                 </p>
@@ -110,7 +110,7 @@
                 <p class="dadoMenuAcessoFuncionario" id="menuCadastrarPaciente" onclick="menuCadastrarPaciente()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCadastrarPaciente">person_add</span> <span class="nomeDadoMenuAcessoFuncionario">Cadastrar paciente</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuCriarFichaAtendimento" onclick="menuCriarFichaAtendimento()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuCriarFichaAtendimento">create_new_folder</span> <span class="nomeDadoMenuAcessoFuncionario">Criar ficha de atendimento</span></p>
                 <p class="dadoMenuAcessoFuncionario" id="menuConsultarHistorico" onclick="menuConsultarHistorico()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuConsultarHistorico">history</span> <span class="nomeDadoMenuAcessoFuncionario">Consultar histórico</span></p>
-                <p class="dadoMenuAcessoFuncionario" id="menuFazerLogoof" onclick="document.location.reload()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuFazerLogoof">logout</span><span class="nomeDadoMenuAcessoFuncionario"> Fazer logoof</span></p>
+                <p class="dadoMenuAcessoFuncionario" id="menuFazerLogoof" onclick="document.location.reload()"><span class="material-icons iconedadoMenuAcessoFuncionario" id="iconeMenuFazerLogoof">logout</span><span class="nomeDadoMenuAcessoFuncionario"> Fazer logoff</span></p>
             </div>
         </div>
         <section class="contudoAcessoFuncionario" id="contudoAcessoFuncionario">
@@ -155,7 +155,7 @@
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoEmail" name="funcionarioConsultarCadastroCriadoEmail" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefone">
-                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefone" id="funcionarioConsultarCadastroCriadoTelefone">(DD) Telefone</label><br>
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefone" id="funcionarioConsultarCadastroCriadoTelefone">(DDD) Telefone</label><br>
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoTelefone" name="funcionarioConsultarCadastroCriadoTelefone" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoCEP">
@@ -207,7 +207,7 @@
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoNomePai" name="funcionarioConsultarCadastroCriadoNomePai" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefonePai">
-                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefonePai" id="funcionarioConsultarCadastroCriadoTelefonePai">(DD) Telefone</label><br>
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefonePai" id="funcionarioConsultarCadastroCriadoTelefonePai">(DDD) Telefone</label><br>
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoTelefonePai" name="funcionarioConsultarCadastroCriadoTelefonePai" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoNomeMae">
@@ -215,7 +215,7 @@
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoNomeMae" name="funcionarioConsultarCadastroCriadoNomeMae" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTelefoneMae">
-                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefoneMae" id="funcionarioConsultarCadastroCriadoTelefoneMae">(DD) Telefone</label><br>
+                        <label class="nomeInputFuncionarioConsultarCadastroCriado" for="funcionarioConsultarCadastroCriadoTelefoneMae" id="funcionarioConsultarCadastroCriadoTelefoneMae">(DDD) Telefone</label><br>
                         <input type="text" class="inputFuncionarioConsultarCadastroCriado" id="inputFuncionarioConsultarCadastroCriadoTelefoneMae" name="funcionarioConsultarCadastroCriadoTelefoneMae" value="" disabled="disabled">
                     </div>
                     <div class="descricaoFuncionarioConsultarCadastroCriado" id="descricaoFuncionarioConsultarCadastroCriadoTipoMedico">
@@ -270,7 +270,7 @@
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteEmail" name="funcionarioCadastrarPacienteEmail" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefone">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefone" id="funcionarioCadastrarPacienteTelefone">(DD) Telefone</label><br>
+                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefone" id="funcionarioCadastrarPacienteTelefone">(DDD) Telefone</label><br>
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefone" name="funcionarioCadastrarPacienteTelefone" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteCEP">
@@ -322,7 +322,7 @@
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomePai" name="funcionarioCadastrarPacienteNomePai" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefonePai">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefonePai" id="funcionarioCadastrarPacienteTelefonePai">(DD) Telefone</label><br>
+                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefonePai" id="funcionarioCadastrarPacienteTelefonePai">(DDD) Telefone</label><br>
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefonePai" name="funcionarioCadastrarPacienteTelefonePai" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteNomeMae">
@@ -330,7 +330,7 @@
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteNomeMae" name="funcionarioCadastrarPacienteNomeMae" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTelefoneMae">
-                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefoneMae" id="funcionarioCadastrarPacienteTelefoneMae">(DD) Telefone</label><br>
+                            <label class="nomeInputFuncionarioCadastrarPaciente" for="funcionarioCadastrarPacienteTelefoneMae" id="funcionarioCadastrarPacienteTelefoneMae">(DDD) Telefone</label><br>
                             <input type="text" class="inputFuncionarioCadastrarPaciente" id="inputFuncionarioCadastrarPacienteTelefoneMae" name="funcionarioCadastrarPacienteTelefoneMae" value="">
                         </div>
                         <div class="descricaoFuncionarioCadastrarPaciente" id="descricaoFuncionarioCadastrarPacienteTipoMedico">
@@ -380,7 +380,7 @@
                     <div class="historicoDetalhes" id="historicoDetalhes1234567890001032022">
                         <div class="historicoDetalhesEsquerda" id="historicoDetalhesEsquerda">
                             <div class="conteudoHistoricoDetalhes" id="conteudoHistoricoDetalhesIMG">
-                                <img src="img/iconeAvatar.png" class="imagemHistoricoDetalhes">
+                                <img src="img/ICONE/iconeAvatar.png" class="imagemHistoricoDetalhes" id="imagemHistoricoDetalhes">
                             </div>
                             <div class="conteudoHistoricoDetalhes" id="conteudoHistoricoDetalhesConteudo">
                                 <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesNome">Nome: 
@@ -421,7 +421,7 @@
                     <div class="historicoDetalhes" id="historicoDetalhes1234567890010012022">
                         <div class="historicoDetalhesEsquerda" id="historicoDetalhesEsquerda">
                             <div class="conteudoHistoricoDetalhes" id="conteudoHistoricoDetalhesIMG">
-                                <img src="img/iconeAvatar.png" class="imagemHistoricoDetalhes">
+                                <img src="img/ICONE/iconeAvatar.png" class="imagemHistoricoDetalhes">
                             </div>
                             <div class="conteudoHistoricoDetalhes" id="conteudoHistoricoDetalhesConteudo">
                                 <p class="descricaoHistoricoDetalhes" id="descricaoHistoricoDetalhesNome">Nome: 
@@ -538,14 +538,19 @@
                             <label class="nomeInputFuncionarioConsultarHistoricoDetalhes" for="funcionarioConsultarHistoricoDetalhesExamesSolicitados" id="funcionarioConsultarHistoricoDetalhesExamesSolicitados">Exames Solicitados</label><br>
                             <textarea type="text" class="inputFuncionarioConsultarHistoricoDetalhes" id="inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados" name="funcionarioConsultarHistoricoDetalhesExamesSolicitados"  disabled="disabled"></textarea>
                         </div>
+                        <div class="conteudobotaoConsultarHistoricoDetalhes" id="conteudobotaoConsultarHistoricoDetalhesExamesSolicitados">
+                            <input type="button" value="IMPRIMIR EXAME" class="botaoConsultarHistoricoDetalhes" id="botaoConsultarHistoricoDetalhesExamesSolicitados" onclick="consultarHistoricoDetalhesExamesSolicitados()">
+                        </div>
                         <div class="descricaoFuncionarioConsultarHistoricoDetalhes" id="descricaoFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados">
                             <label class="nomeInputFuncionarioConsultarHistoricoDetalhes" for="funcionarioConsultarHistoricoDetalhesMedicamentosReceitados" id="funcionarioConsultarHistoricoDetalhesMedicamentosReceitados">Medicamentos Receitados</label><br>
                             <textarea type="text" class="inputFuncionarioConsultarHistoricoDetalhes" id="inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados" name="funcionarioConsultarHistoricoDetalhesMedicamentosReceitados"  disabled="disabled"></textarea>
                         </div>
-                        
-                        <!-- <div class="conteudobotaoConsultarHistorico" id="conteudobotaoConsultarHistorico">
-                            <input type="button" value="CADASTRAR PACIENTE" class="botaoConsultarHistorico" onclick="consultarHistoricoCriado()">
-                        </div> -->
+                        <div class="conteudobotaoConsultarHistoricoDetalhes" id="conteudobotaoConsultarHistoricoDetalhesMedicamentosReceitados">
+                            <input type="button" value="IMPRIMIR EXAME" class="botaoConsultarHistoricoDetalhes" id="botaoConsultarHistoricoDetalhesMedicamentosReceitados" onclick="consultarHistoricoDetalhesMedicamentosReceitados()">
+                        </div>
+                        <div class="conteudobotaoConsultarHistorico" id="conteudobotaoConsultarHistorico">
+                            <input type="button" value="IMPRIMIR HISTÓRICO COMPLETO" class="botaoConsultarHistorico" onclick="consultarHistoricoCriado()">
+                        </div>
                     </div>
                 </div>
             </div>

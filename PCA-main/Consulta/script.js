@@ -33,6 +33,10 @@ function Autenticacao(){
     var nomeAcessoFuncionarioNome = document.getElementById("nomeAcessoFuncionarioNome");
     var nomeAcessoFuncionarioMatricula = document.getElementById("nomeAcessoFuncionarioMatricula");
     var nomeAcessoFuncionarioFuncao = document.getElementById("nomeAcessoFuncionarioFuncao");
+    var imagemFuncionario = document.getElementById("imagemFuncionario");
+    
+    var menuCadastrarPaciente = document.getElementById("menuCadastrarPaciente");
+    var menuCriarFichaAtendimento = document.getElementById("menuCriarFichaAtendimento");
 
 
     if(campoAutenticacaoUsuario == "589045" && campoAutenticacaoSenha == "589045"){
@@ -42,6 +46,7 @@ function Autenticacao(){
         title.innerHTML = "SIDADUS | Funcionário";
         body.className = "fundoBranco";
 
+        imagemFuncionario.src = "img/ICONE/589045.png";
         nomeAcessoFuncionarioNome.innerHTML = "Jeniffer Lopez";
         nomeAcessoFuncionarioMatricula.innerHTML = "589045";
         nomeAcessoFuncionarioFuncao.innerHTML = "Recepcionista";
@@ -53,9 +58,13 @@ function Autenticacao(){
         title.innerHTML = "SIDADUS | Funcionário";
         body.className = "fundoBranco";
 
-        nomeAcessoFuncionarioNome.innerHTML = "João Paulo";
+        imagemFuncionario.src = "img/ICONE/12345.png";
+        nomeAcessoFuncionarioNome.innerHTML = "Mauricio Cortez";
         nomeAcessoFuncionarioMatricula.innerHTML = "12345";
         nomeAcessoFuncionarioFuncao.innerHTML = "Doutor";
+
+        menuCadastrarPaciente.style.display = "none";
+        menuCriarFichaAtendimento.style.display = "none";
     }
 }
 
@@ -503,8 +512,8 @@ function consultarHistorico(){
     var nomeHistoricoDetalhesNome = document.getElementsByClassName("nomeHistoricoDetalhesNome");
     var nomeHistoricoDetalhesCPF = document.getElementsByClassName("nomeHistoricoDetalhesCPF");
     var nomeHistoricoDetalhesFuncao = document.getElementsByClassName("nomeHistoricoDetalhesFuncao");
+    var imagemHistoricoDetalhes = document.getElementsByClassName("imagemHistoricoDetalhes");
     var i;
-
 
     var funcionarioCadastrarPaciente = document.getElementById("funcionarioCadastrarPaciente");
 
@@ -518,6 +527,8 @@ function consultarHistorico(){
         nomeHistoricoDetalhesCPF[i].innerHTML = "123.456.789-00";
         for (i=0; i< nomeHistoricoDetalhesFuncao.length; i++)
         nomeHistoricoDetalhesFuncao[i].innerHTML = "Engenheiro";
+        for (i=0; i< imagemHistoricoDetalhes.length; i++)
+        imagemHistoricoDetalhes[i].src = "img/ICONE/12345678900.png";
 
         funcionarioCadastrarPaciente.className = "funcionarioCadastrarPaciente";
     }
@@ -541,26 +552,26 @@ function consultarHistoricoDetalhes(){
     
 }
 
-var inputFuncionarioConsultarHistoricoDetalhesProntuario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesProntuario")
-var inputFuncionarioConsultarHistoricoDetalhesDataAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDataAtendimento")
-var inputFuncionarioConsultarHistoricoDetalhesHorario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesHorario")
-var inputFuncionarioConsultarHistoricoDetalhesTelefoneContato = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefoneContato")
-var inputFuncionarioConsultarHistoricoDetalhesNomeCompleto = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeCompleto")
-var inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo")
-var inputFuncionarioConsultarHistoricoDetalhesLocalNascimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesLocalNascimento")
-var inputFuncionarioConsultarHistoricoDetalhesSexo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSexo")
-var inputFuncionarioConsultarHistoricoDetalhesIdade = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesIdade")
-var inputFuncionarioConsultarHistoricoDetalhesTipoMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoMedico")
-var inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento")
-var inputFuncionarioConsultarHistoricoDetalhesNomeMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeMedico")
-var inputFuncionarioConsultarHistoricoDetalhesCRM = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCRM")
-var inputFuncionarioConsultarHistoricoDetalhesAlergias = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesAlergias")
-var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas")
-var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados")
-var inputFuncionarioConsultarHistoricoDetalhesSintomas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSintomas")
-var inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas")
-var inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados")
-var inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados")
+var inputFuncionarioConsultarHistoricoDetalhesProntuario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesProntuario");
+var inputFuncionarioConsultarHistoricoDetalhesDataAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDataAtendimento");
+var inputFuncionarioConsultarHistoricoDetalhesHorario = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesHorario");
+var inputFuncionarioConsultarHistoricoDetalhesTelefoneContato = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTelefoneContato");
+var inputFuncionarioConsultarHistoricoDetalhesNomeCompleto = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeCompleto");
+var inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoSaguineo");
+var inputFuncionarioConsultarHistoricoDetalhesLocalNascimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesLocalNascimento");
+var inputFuncionarioConsultarHistoricoDetalhesSexo = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSexo");
+var inputFuncionarioConsultarHistoricoDetalhesIdade = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesIdade");
+var inputFuncionarioConsultarHistoricoDetalhesTipoMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesTipoMedico");
+var inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSalaAtendimento");
+var inputFuncionarioConsultarHistoricoDetalhesNomeMedico = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesNomeMedico");
+var inputFuncionarioConsultarHistoricoDetalhesCRM = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesCRM");
+var inputFuncionarioConsultarHistoricoDetalhesAlergias = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesAlergias");
+var inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesDoencasCronicas");
+var inputFuncionarioConsultarHistoricoDetalhesRemediosControlados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesRemediosControlados");
+var inputFuncionarioConsultarHistoricoDetalhesSintomas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesSintomas");
+var inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesObservacoesMedicas");
+var inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesExamesSolicitados");
+var inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados = document.getElementById("inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados");
 
 
 
@@ -610,6 +621,15 @@ $('#historicoDetalhes1234567890010012022 #botaoConsultarHistoricoDetalhes').clic
     inputFuncionarioConsultarHistoricoDetalhesMedicamentosReceitados.value = "";
 });
 
+function consultarHistoricoCriado(){
+    window.print();
+
+    var body = document.getElementById("body");
+
+    body.style.webkitPrintColorAdjust = "exact"
+
+
+}
 
 
 /* Travar F5 para rerarregar */
