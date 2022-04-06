@@ -66,6 +66,13 @@ function Autenticacao(){
         menuCadastrarPaciente.style.display = "none";
         menuCriarFichaAtendimento.style.display = "none";
     }
+    
+    var botaoHamburguer = document.getElementById("botaoHamburguer");
+
+    var x = window.screen.width;
+    if(x <= "750"){
+        botaoHamburguer.innerHTML = "menu"
+    }
 }
 
 
@@ -83,23 +90,87 @@ function esqueceuSenha(){
 
 }
 
+
 function menuHamburguer(){
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
 
+    var str = document.getElementById("botaoHamburguer").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+
     var x = window.screen.width;
-    if(x <= "750"){
+    if(x <= "750" && res=="menu"){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioAbrir";
         acessoFuncionario.className = "acessoFuncionarioAbrir";
         topoAcessoFuncionario.className = "topoAcessoFuncionarioAbrir";
+
+        botaoHamburguer.className = "material-icons botaoClose";
+        botaoHamburguer.innerHTML = "close";
     }
-    else{
+    else if(x <= "750" && res=="menu_open"){
+        menuAcessoFuncionario.className = "menuAcessoFuncionarioAbrir";
+        acessoFuncionario.className = "acessoFuncionarioAbrir";
+        topoAcessoFuncionario.className = "topoAcessoFuncionarioAbrir";
+
+        botaoHamburguer.className = "material-icons botaoClose";
+        botaoHamburguer.innerHTML = "close";
+    }
+    else if(x <= "750" && res=="close"){
+        menuAcessoFuncionario.className = "menuAcessoFuncionario";
+        acessoFuncionario.className = "acessoFuncionarioMostar";
+        topoAcessoFuncionario.className = "topoAcessoFuncionario";
+
+        botaoHamburguer.className = "material-icons botaoHamburguer";
+        botaoHamburguer.innerHTML = "menu";
+    }
+    else if(x >= "751" && res=="menu_open"){
         menuAcessoFuncionario.className = "menuAcessoFuncionario";
         acessoFuncionario.className = "acessoFuncionarioMostrar";
-        topoAcessoFuncionario.className = "topoAcessoFuncionario"
+        topoAcessoFuncionario.className = "topoAcessoFuncionario";
+        
+        botaoHamburguer.className = "material-icons botaoClose";
+        botaoHamburguer.innerHTML = "close";
+    }
+    else if(x >= "751" && res=="menu"){
+        menuAcessoFuncionario.className = "menuAcessoFuncionario";
+        acessoFuncionario.className = "acessoFuncionarioMostrar";
+        topoAcessoFuncionario.className = "topoAcessoFuncionario";
+        
+        botaoHamburguer.className = "material-icons botaoClose";
+        botaoHamburguer.innerHTML = "close";
+    }
+    else if(x >= "751" && res=="close"){
+        menuAcessoFuncionario.className = "menuAcessoFuncionarioOcultar";
+        acessoFuncionario.className = "acessoFuncionarioFecharMenu";
+        topoAcessoFuncionario.className = "topoAcessoFuncionarioFechar";
+        
+        botaoHamburguer.className = "material-icons botaoHamburguer";
+        botaoHamburguer.innerHTML = "menu";
     }
 }
+function menuHamburguerOver(){
+    var str = document.getElementById("botaoHamburguer").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+    
+    if(res=="menu"){        
+        botaoHamburguer.innerHTML = "menu_open";
+    }
+}
+function menuHamburguerOut(){
+    var str = document.getElementById("botaoHamburguer").innerHTML;
+    var arr = str.split(" ");
+    var res = arr[0];
+
+    if(res=="menu_open"){        
+        botaoHamburguer.innerHTML = "menu";
+    }
+
+}
+
+
 function menuFechar(){
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var acessoFuncionario = document.getElementById("acessoFuncionario");

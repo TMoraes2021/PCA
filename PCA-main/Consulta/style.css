@@ -106,7 +106,7 @@ body{
 }
 .botaoAutenticar:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* color: #303030; */
@@ -207,7 +207,7 @@ body{
 }
 .botaoEsqueceuSenha:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* transform:translateX(1px) scale(1.1); */
@@ -284,21 +284,22 @@ body{
 .menuHamburguerAcessoFuncionario{
     background-color: #f0f0f0;
 }
-#botaoHamburguer,#botaoFechar{
+.botaoHamburguer, .botaoClose{
     color: #ffffff;
     background-color: #126dde;
     padding: 12px;
     font-size: 24px;
-    border-radius: 0% 0% 50%;
-}
-#botaoFechar{
     border-right: #ffffff solid 1px;
     border-bottom: #ffffff solid 1px;
 }
-#botaoFechar:hover, #botaoHamburguer:hover{
-    border-radius: 0% 0% 50%;
+.botaoClose:hover{
+    color: #ff0000;
 }
+/* .botaoHamburguer:hover{
+    color: #23E5FF;
+} */
 .dadosAcessoFuncionario{
+    padding-top: 15px;
     display: grid;
     margin: auto;
 }
@@ -422,7 +423,7 @@ body{
 }
 .botaoConsultarCadastro:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* transform:translateX(1px) scale(1.1); */
@@ -717,7 +718,7 @@ body{
 }
 .botaoCadastrarPaciente:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* transform:translateX(1px) scale(1.1); */
@@ -777,7 +778,7 @@ body{
 }
 .botaoConsultarHistorico:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* transform:translateX(1px) scale(1.1); */
@@ -905,7 +906,7 @@ body{
 }
 .botaoConsultarHistoricoDetalhes:hover{
     font-size: 16px;
-    padding: 4px 12px;
+    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* transform:translateX(1px) scale(1.1); */
@@ -946,7 +947,6 @@ body{
 }
 .historicoDetalhesDireita .descricaoHistoricoDetalhes:last-child{
     text-align: right;
-    position: relative;
     right: 0;
     bottom: 0;
     padding: 5px;
@@ -1016,6 +1016,12 @@ body{
         width: 100%;
         margin: 0px auto;
         grid-template-columns: 220px auto;
+    }
+}
+@media only screen and (max-width: 404px) {
+    .menuHamburguerAcessoFuncionario{
+        background: #f0f0f0;
+        height: 96px;
     }
 }
 
