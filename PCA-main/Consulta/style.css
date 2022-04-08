@@ -106,11 +106,9 @@ body{
 }
 .botaoAutenticar:hover{
     font-size: 16px;
-    padding: 4px 11px;
-    background-color: #23E5FF;
     border: #23E5FF 1px solid;
     /* color: #303030; */
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 
@@ -206,11 +204,9 @@ body{
     font-size: 14px;
 }
 .botaoEsqueceuSenha:hover{
-    font-size: 16px;
-    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 .LinkbotaoVoltar{
@@ -422,11 +418,9 @@ body{
     font-size: 14px;
 }
 .botaoConsultarCadastro:hover{
-    font-size: 16px;
-    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 
@@ -717,11 +711,9 @@ body{
     font-size: 14px;
 }
 .botaoCadastrarPaciente:hover{
-    font-size: 16px;
-    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 
@@ -777,11 +769,9 @@ body{
     font-size: 14px;
 }
 .botaoConsultarHistorico:hover{
-    font-size: 16px;
-    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 
@@ -905,11 +895,9 @@ body{
     font-size: 14px;
 }
 .botaoConsultarHistoricoDetalhes:hover{
-    font-size: 16px;
-    padding: 4px 11px;
     background-color: #23E5FF;
     border: #23E5FF 1px solid;
-    /* transform:translateX(1px) scale(1.1); */
+    transform:translateX(1px) scale(1.01);
 }
 
 .conteudobotaoConsultarHistorico{

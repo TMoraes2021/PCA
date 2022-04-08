@@ -205,7 +205,9 @@ function menuConsultarCadastro(){
 
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
-    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario")
+    var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
+
+    var botaoHamburguer = document.getElementById("botaoHamburguer");
 
     var x = window.screen.width;
     if(x <= "750"){
@@ -218,6 +220,8 @@ function menuConsultarCadastro(){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
         acessoFuncionario.className = "acessoFuncionarioFecharMenu";
         topoAcessoFuncionario.className = "topoAcessoFuncionario";
+        
+        botaoHamburguer.innerHTML = "menu";
     }
     else{
         consultarCadastro.className = "consultarCadastro";
@@ -428,6 +432,8 @@ function menuCadastrarPaciente(){
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
+    
+    var botaoHamburguer = document.getElementById("botaoHamburguer");
 
     var x = window.screen.width;
     if(x <= "750"){
@@ -440,6 +446,8 @@ function menuCadastrarPaciente(){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
         acessoFuncionario.className = "acessoFuncionarioFecharMenu";
         topoAcessoFuncionario.className = "topoAcessoFuncionario";
+        
+        botaoHamburguer.innerHTML = "menu";
     }
     else{
         consultarCadastro.className = "consultarCadastroOcultar";
@@ -544,7 +552,9 @@ function menuConsultarHistorico(){
     var acessoFuncionario = document.getElementById("acessoFuncionario");
     var menuAcessoFuncionario = document.getElementById("menuAcessoFuncionario");
     var topoAcessoFuncionario = document.getElementById("topoAcessoFuncionario");
-
+    
+    var botaoHamburguer = document.getElementById("botaoHamburguer");
+    
     var x = window.screen.width;
     if(x <= "750"){
         consultarCadastro.className = "consultarCadastroOcultar";
@@ -558,6 +568,8 @@ function menuConsultarHistorico(){
         menuAcessoFuncionario.className = "menuAcessoFuncionarioFecharMenu";
         acessoFuncionario.className = "acessoFuncionarioFecharMenu";
         topoAcessoFuncionario.className = "topoAcessoFuncionario";
+
+        botaoHamburguer.innerHTML = "menu";
     }
     else{
         consultarCadastro.className = "consultarCadastroOcultar";
