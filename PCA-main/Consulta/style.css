@@ -354,6 +354,7 @@ body{
     position: fixed;
     right: 0;
     background: #f0f0f0;
+    z-index: 1;
 }
 .topoAcessoFuncionarioFechar{
     width: calc(100% - 45px);
